@@ -41,7 +41,8 @@ int version = 0;
                 case 'n': m=0xFFFFFF; end=false; break;
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
         }
-
+        }
+        
 if(version ==1){
         for(int x = 0; x < a.length; x++){
             for( int y = 0; y< a[0].length; y++){
@@ -444,7 +445,7 @@ if(version ==1){
 //else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
 else{a[x][y] = 0xFF0000;}}
 
-        }
+        
              //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
             }
         }
