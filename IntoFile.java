@@ -21,6 +21,7 @@ public class IntoFile {
         try {
             ImageIO.write(image, "png", new File(/*filename*/ "drawn.png"));
         } catch (IOException e) {
+              e.printStackTrace();
         }
     }
 
