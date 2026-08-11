@@ -16,7 +16,7 @@ public class Main {
             case '1': version=1; break;
             case '2': version=2; break;
             case '3': version=3; break;
-            case '4': version = 4;
+            case '4': version = 4; break;
             default: version = 2;
         }
 
