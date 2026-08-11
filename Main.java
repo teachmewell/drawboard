@@ -25,17 +25,17 @@ public class Main {
              m = System.in.read();
             switch(m){
                 case 'r': m=0xFF0000; end=false; break;
-                case 'o': m=0xFFF000; end=false; break;
+                case 'o': m=0xFF7F00; end=false; break;
                 case 'y': m=0xFFFF00; end=false; break;
-                case 'l': m=0xF0FF00; end=false; break;
+                case 'l': m=0x7FFF00; end=false; break;
                 case 'g': m=0x00FF00; end=false; break;
                 case 's': m=0x00FFF0; end=false; break;
                 case 'c': m=0x00FFFF; end=false; break;
-                case 'a': m=0x00F0FF; end=false; break;
+                case 'a': m=0x07F0FF; end=false; break;
                 case 'b': m=0x0000FF; end=false; break;
-                case 'v': m=0xF000FF; end=false; break;
+                case 'v': m=0x7F00FF; end=false; break;
                 case 'm': m=0xFF00FF; end=false; break;
-                case 'd': m=0xFF00F0; end=false; break;
+                case 'd': m=0xFF007F; end=false; break;
                 case 'w': m=0x000000; end=false; break;
                 case 'n': m=0xFFFFFF; end=false; break;
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
