@@ -28,7 +28,7 @@ public class Img extends JPanel {
                 int x = (int) (e.getX() / scale);
                 int y = (int) (e.getY()/ scale);
                 setPixel(x,y,color);
-            }})
+            }});
         
                                     
                                      label.addMouseListener(new MouseAdapter() {
