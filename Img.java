@@ -28,7 +28,7 @@ public class Img extends JPanel {
                 int x = (int) (e.getX() / scale);
                 int y = (int) (e.getY()/ scale);
                 setPixel(x,y,color);
-            }});
+            }}); // END OF MOUSEMOTIONLISTENER
         
                                     
                                      label.addMouseListener(new MouseAdapter() {
@@ -41,9 +41,9 @@ public class Img extends JPanel {
             }
 
                                          
-                                     }
-                                    );
-    }
+                                     } 
+                                    );// END OF MOUSELISTENER
+        }
 
 
     public void display(){
@@ -89,8 +89,17 @@ public class Img extends JPanel {
 
         frame.add(label);
 
+        frame.addWindowListener(new WindowAdapter() {
+        @Override
+        public void windowClosing(WindowEvent e) {
+            IntoFile.saveImage(pic);
+            frame.dispose();
+        }
+    });
+        
+
         frame.pack();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setVisible(true);
     }
 
