@@ -40,8 +40,8 @@ public class Main {
                 case 'v': m=0x7F00FF; end=false; break;
                 case 'm': m=0xFF00FF; end=false; break;
                 case 'd': m=0xFF007F; end=false; break;
-                case 'w': m=0x000000; end=false; break;
-                case 'n': m=0xFFFFFF; end=false; break;
+                case 'n': m=0x000000; end=false; break;
+                case 'w': m=0xFFFFFF; end=false; break;
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
             }
         }
