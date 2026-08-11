@@ -5,7 +5,20 @@ import java.awt.image.BufferedImage;
 public class Main {
     public static void main(String[] args) throws IOException {
         boolean end = true;
+         int[][] a = new int[75][75];
         int m=0;
+int version = 0;
+
+            System.out.println("Do you want a template to start with, a completely white paper, or randomly coloured? Enter 1,2,3. (default is template) ");
+        version = System.in.read();
+            switch(m){
+                case '1': version=1; break;
+                case '2': version=2; break;
+                case '3': version=3; break;  
+                default: version = 1;
+            }
+
+   if(version == 1) {    
         while(end) {
             System.out.println("Hello, here you can draw numbers. ");
             System.out.println("choose color, enter their RGB number:");
@@ -32,7 +45,6 @@ public class Main {
             }
         }
 
-        int[][] a = new int[75][75];
 
         for(int x = 0; x < a.length; x++){
             for( int y = 0; y< a[0].length; y++){
@@ -432,8 +444,19 @@ public class Main {
                 else if(x==28 && y ==35){a[x][y]=0xFFFF00;}
                 else if(x==29 && y ==36){a[x][y]=0xFFFF00;}
 
-else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
-//else{a[x][y] = 0xFF0000;}
+//else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
+else{a[x][y] = 0xFF0000;}}
+
+            else if(version == 2){
+
+                
+            }
+            else if(version ==3){
+                 for(int x = 0; x < a.length; x++){
+            for( int y = 0; y< a[0].length; y++){
+                 a[x][y]= (int)(Math.random() * 0xFFFFFF);
+            }}
+            }
              //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
             }
         }
