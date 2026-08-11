@@ -7,11 +7,10 @@ public class Main {
         boolean end = true;
          int[][] a = new int[75][75];
         int m=0;
-int version = 0;
 
             System.out.println("Do you want a template to start with, a completely white paper, or randomly coloured? Enter 1,2,3. (default is template) ");
-        version = System.in.read();
-            switch(m){
+       int version = System.in.read();
+            switch(version){
                 case '1': version=1; break;
                 case '2': version=2; break;
                 case '3': version=3; break;  
