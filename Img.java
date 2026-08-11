@@ -9,7 +9,7 @@ public class Img extends JPanel {
     public int color;
     public int[][] pic; // MOST UPDATED
     public BufferedImage image;
-    int scale;
+    double scale;
     JLabel label;
 
     public Img(int[][] img, int rgb){
