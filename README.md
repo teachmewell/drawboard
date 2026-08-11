@@ -36,3 +36,7 @@ If no drawn.png present, you get an error.
 1,2,3 reset drawn.png . 
 
 If you want to save it, you must rename it or move it into another folder. 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+You can draw on your own pgns by dragging them into the folder and renaming them to drawn.png However, you may barely see differences of bit-size of big images. 
