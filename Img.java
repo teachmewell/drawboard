@@ -13,9 +13,9 @@ public class Img extends JPanel {
     JLabel label;
 
     public Img(int[][] img, int rgb){
-     int z =1000 / Math.max(img[0].length, img.length);
-        if(z<1){z=1;}
-        this.scale = z;
+     // int z =1000 / Math.max(img[0].length, img.length);
+      //  if(z<1){z=1;}
+        this.scale = Math.max(1000.0/img[0].length,  1000.0/img.length);
         this.color = rgb;
         this.pic = img;
         this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT_RGB);
