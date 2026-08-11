@@ -15,7 +15,7 @@ public class Img extends JPanel {
     public Img(int[][] img, int rgb){
      // int z =1000 / Math.max(img[0].length, img.length);
       //  if(z<1){z=1;}
-        this.scale = Math.max(1000.0/img[0].length,  1000.0/img.length);
+        this.scale = Math.min(1000.0/img[0].length,  1000.0/img.length);
         this.color = rgb;
         this.pic = img;
         this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT_RGB);
@@ -24,16 +24,16 @@ public class Img extends JPanel {
         label.addMouseMotionListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                int x = (int) e.getX() /. scale;
-                int y = (int) e.getY()/. scale;
+                int x = (int) e.getX() /scale;
+                int y = (int) e.getY()/ scale;
                 System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
                 setPixel(x,y,color);
             }
 
             @Override
             public void mouseDragged(MouseEvent e){
-                int x = e.getX() /. scale;
-                int y = e.getY()/. scale;
+                int x = (int) e.getX() / scale;
+                int y = (int) e.getY()/ scale;
                 setPixel(x,y,color);
             }
         });
@@ -54,8 +54,8 @@ public class Img extends JPanel {
 //____________________________________________________________________________________________________________________________________
 
     public BufferedImage scaleImage(BufferedImage old, double by){
-        double newWidth = old.getWidth() * by;
-        double newHeight = old.getHeight() * by;
+        int newWidth = Math.max(1, old.getWidth() * by);
+         int newHeight = Math.max(1, old.getHeight() * by);
 
         BufferedImage result = new BufferedImage(
                 newWidth,
