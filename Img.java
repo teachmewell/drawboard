@@ -21,7 +21,7 @@ public class Img extends JPanel {
         this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT_RGB);
         label = new JLabel(new ImageIcon( scaleImage(image, scale) ));
 
-        label.addMouseAdapter(new MouseAdapter() {
+        label.addMouseMotionListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 int x = (int) (e.getX() /scale);
