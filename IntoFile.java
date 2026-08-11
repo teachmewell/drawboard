@@ -7,8 +7,8 @@ public class IntoFile {
 
     public static void saveImage(int[][] pixels /*, String filename*/ ) {
 
-        int height = pixels.length;
-        int width = pixels[0].length;
+        int height = pixels[0].length;
+        int width = pixels.length;
 
         BufferedImage image= new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
