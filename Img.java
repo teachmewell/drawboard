@@ -8,10 +8,11 @@ public class Img extends JPanel {
     public int color;
     public int[][] pic; // MOST UPDATED
     public BufferedImage image;
-    int scale = 13;
+    int scale;
     JLabel label;
 
     public Img(int[][] img, int rgb){
+        this.scale = 600 / img[].length;
         this.color = rgb;
         this.pic = img;
         this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT_RGB);
