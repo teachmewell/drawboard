@@ -432,8 +432,8 @@ public class Main {
                 else if(x==28 && y ==35){a[x][y]=0xFFFF00;}
                 else if(x==29 && y ==36){a[x][y]=0xFFFF00;}
 
-
-else{a[x][y] = 0xFF0000;}
+else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
+//else{a[x][y] = 0xFF0000;}
              //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
             }
         }
