@@ -28,7 +28,7 @@ public class Main {
                 case 'd': m=0xFF000F; end=false; break;
                 case 'w': m=0x000000; end=false; break;
                 case 'n': m=0xFFFFFF; end=false; break;
-                default: 
+                default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
             }
         }
 
