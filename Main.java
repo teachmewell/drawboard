@@ -14,6 +14,7 @@ public class Main {
                 case '1': version=1; break;
                 case '2': version=2; break;
                 case '3': version=3; break;  
+                default: version=2;
             }
         
         while(end) {
@@ -36,8 +37,8 @@ public class Main {
                 case 'v': m=0x7F00FF; end=false; break;
                 case 'm': m=0xFF00FF; end=false; break;
                 case 'd': m=0xFF007F; end=false; break;
-                case 'w': m=0x000000; end=false; break;
-                case 'n': m=0xFFFFFF; end=false; break;
+                case 'n': m=0x000000; end=false; break;
+                case 'w': m=0xFFFFFF; end=false; break;
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
         }
         }
@@ -458,7 +459,7 @@ else{a[x][y] = 0xFF0000;}}
         if(version ==2){
    for(int k = 0; k < a.length; k++){
             for( int j = 0; j< a[0].length; j++){
-                 a[k][j]=0;
+                 a[k][j]=0xFFFFFF;
             }}
             
         }
