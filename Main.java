@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 public class Main {
     public static void main(String[] args) throws IOException {
         boolean end = true;
-        int[][] a = new int[75][75];
+        int[][] a = new int[130][77];
         int m=0;
 
         System.out.println("Do you want a template to start with, a completely white paper, randomly coloured, or from a file(Do not choose this first time, because it would be 0 bytes big)? Enter 1,2,3,4. (default is template) ");
