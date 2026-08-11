@@ -22,6 +22,16 @@ public class Img extends JPanel {
         label = new JLabel(new ImageIcon( scaleImage(image, scale) ));
 
         label.addMouseMotionListener(new MouseAdapter() {
+
+            @Override
+            public void mouseDragged(MouseEvent e){
+                int x = (int) (e.getX() / scale);
+                int y = (int) (e.getY()/ scale);
+                setPixel(x,y,color);
+            }
+        }
+                                    
+                                     label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 int x = (int) (e.getX() /scale);
@@ -30,13 +40,9 @@ public class Img extends JPanel {
                 setPixel(x,y,color);
             }
 
-            @Override
-            public void mouseDragged(MouseEvent e){
-                int x = (int) (e.getX() / scale);
-                int y = (int) (e.getY()/ scale);
-                setPixel(x,y,color);
-            }
-        });
+                                         
+                                     }
+                                    );
     }
 
 
