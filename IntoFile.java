@@ -14,7 +14,7 @@ public class IntoFile {
 
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
-                image.setRGB(x, y, pixels[y][x]);
+                image.setRGB(x, y, pixels[x][y]);
             }
         }
 
@@ -38,7 +38,7 @@ public class IntoFile {
 
             for (int y = 0; y < height; y++) {
                 for (int x = 0; x < width; x++) {
-                    pixels[y][x] = image.getRGB(x, y) & 0xFFFFFF;
+                    pixels[x][y] = image.getRGB(x, y) & 0xFFFFFF;
                 }
             }
             return pixels;
