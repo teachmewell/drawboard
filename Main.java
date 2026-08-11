@@ -17,8 +17,7 @@ int version = 0;
                 case '3': version=3; break;  
                 default: version = 1;
             }
-
-   if(version == 1) {    
+        
         while(end) {
             System.out.println("Hello, here you can draw numbers. ");
             System.out.println("choose color, enter their RGB number:");
@@ -42,10 +41,9 @@ int version = 0;
                 case 'w': m=0x000000; end=false; break;
                 case 'n': m=0xFFFFFF; end=false; break;
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
-            }
         }
 
-
+if(version ==1){
         for(int x = 0; x < a.length; x++){
             for( int y = 0; y< a[0].length; y++){
                 if(x==40 && y ==26){a[x][y]=0xFFFF00;}
@@ -447,7 +445,7 @@ int version = 0;
 //else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
 else{a[x][y] = 0xFF0000;}}
 
-     
+        }
              //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
             }
         }
