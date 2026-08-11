@@ -34,7 +34,7 @@ public class IntoFile {
             int width = image.getWidth();
             int height = image.getHeight();
 
-            int[][] pixels = new int[height][width];
+            int[][] pixels = new int[width][height];
 
             for (int y = 0; y < height; y++) {
                 for (int x = 0; x < width; x++) {
