@@ -24,16 +24,16 @@ public class Img extends JPanel {
         label.addMouseMotionListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                int x = (int) e.getX() /scale;
-                int y = (int) e.getY()/ scale;
+                int x = (int) (e.getX() /scale);
+                int y = (int) (e.getY()/ scale);
                 System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
                 setPixel(x,y,color);
             }
 
             @Override
             public void mouseDragged(MouseEvent e){
-                int x = (int) e.getX() / scale;
-                int y = (int) e.getY()/ scale;
+                int x = (int) (e.getX() / scale);
+                int y = (int) (e.getY()/ scale);
                 setPixel(x,y,color);
             }
         });
