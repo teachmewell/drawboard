@@ -15,7 +15,6 @@ int version = 0;
                 case '1': version=1; break;
                 case '2': version=2; break;
                 case '3': version=3; break;  
-                default: version = 1;
             }
         
         while(end) {
