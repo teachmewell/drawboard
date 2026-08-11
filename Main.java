@@ -447,11 +447,11 @@ int version = 0;
 //else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
 else{a[x][y] = 0xFF0000;}}
 
-            else if(version == 2){
+            elseif(version == 2){
 
                 
             }
-            else if(version ==3){
+            elseif(version ==3){
                  for(int x = 0; x < a.length; x++){
             for( int y = 0; y< a[0].length; y++){
                  a[x][y]= (int)(Math.random() * 0xFFFFFF);
