@@ -24,8 +24,8 @@ public class Img extends JPanel {
         label.addMouseMotionListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                int x = e.getX() / scale;
-                int y = e.getY()/scale;
+                int x = (int) e.getX() / scale;
+                int y = (int) e.getY()/scale;
                 System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
                 setPixel(x,y,color);
             }
@@ -53,9 +53,9 @@ public class Img extends JPanel {
     }
 //____________________________________________________________________________________________________________________________________
 
-    public BufferedImage scaleImage(BufferedImage old, int by){
-        int newWidth = old.getWidth() * by;
-        int newHeight = old.getHeight() * by;
+    public BufferedImage scaleImage(BufferedImage old, double by){
+        double newWidth = old.getWidth() * by;
+        double newHeight = old.getHeight() * by;
 
         BufferedImage result = new BufferedImage(
                 newWidth,
