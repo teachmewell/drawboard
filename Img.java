@@ -12,7 +12,9 @@ public class Img extends JPanel {
     JLabel label;
 
     public Img(int[][] img, int rgb){
-        this.scale = 1000 / img[0].length;
+     int z =1000 / img[0].length;
+        if(z<1){z=1;}
+        this.scale = z;
         this.color = rgb;
         this.pic = img;
         this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT_RGB);
