@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.lang.Math;
 
 public class Img extends JPanel {
     public int color;
@@ -12,7 +13,7 @@ public class Img extends JPanel {
     JLabel label;
 
     public Img(int[][] img, int rgb){
-     int z =1000 / img[0].length;
+     int z =1000 / Math.max(img[0].length, img.length);
         if(z<1){z=1;}
         this.scale = z;
         this.color = rgb;
