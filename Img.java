@@ -54,8 +54,8 @@ public class Img extends JPanel {
 //____________________________________________________________________________________________________________________________________
 
     public BufferedImage scaleImage(BufferedImage old, double by){
-        int newWidth = Math.max(1, old.getWidth() * by);
-         int newHeight = Math.max(1, old.getHeight() * by);
+        int newWidth = (int) Math.max(1, old.getWidth() * by);
+         int newHeight = (int) Math.max(1, old.getHeight() * by);
 
         BufferedImage result = new BufferedImage(
                 newWidth,
