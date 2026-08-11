@@ -447,16 +447,16 @@ int version = 0;
 //else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
 else{a[x][y] = 0xFF0000;}}
 
-        if(version ==3){
+     
+             //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
+            }
+        }
+   if(version ==3){
                  for(int k = 0; k < a.length; k++){
             for( int j = 0; j< a[0].length; j++){
                  a[k][j]= (int)(Math.random() * 0xFFFFFF);
             }}
             }
-             //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
-            }
-        }
-
 
         Img img = new Img(a, m);
 
