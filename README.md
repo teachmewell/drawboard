@@ -1,13 +1,14 @@
 Java , drawboard. You can color pixels. 
 
 To run it: 
-1. install Java , install git.
+ **FIRST:**  install Java , install git.
 (on powershell:
 winget install Microsoft.OpenJDK.17
 winget install --id Git.Git -e --source winget
 )
+.
 
- 2.ON POWERSHELL, TYPE IN: 
+ **SECONDLY:**  ON POWERSHELL, TYPE IN: 
 2.1. git clone https://github.com/teachmewell/drawboard.git
 2.2. cd drawboard/
 2.3. javac Main.java IntoFile.java Img.java
