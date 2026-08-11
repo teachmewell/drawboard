@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class Img extends JPanel {
-   public int color;
+    public int color;
     public int[][] pic; // MOST UPDATED
     public BufferedImage image;
     int scale = 13;
@@ -14,8 +14,8 @@ public class Img extends JPanel {
     public Img(int[][] img, int rgb){
         this.color = rgb;
         this.pic = img;
-this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT_RGB);
- label = new JLabel(new ImageIcon( scaleImage(image, scale) ));
+        this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT_RGB);
+        label = new JLabel(new ImageIcon( scaleImage(image, scale) ));
 
         label.addMouseMotionListener(new MouseAdapter() {
             @Override
@@ -23,7 +23,7 @@ this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT
                 int x = e.getX() / scale;
                 int y = e.getY()/scale;
                 System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
-               setPixel(x,y,color);
+                setPixel(x,y,color);
             }
 
             @Override
@@ -43,9 +43,9 @@ this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT
                 else{ image.setRGB(x, y, pic[x][y]); }
             }
         } //calculation of every pixel done.
-       // image = scaleImage(image, 100);
-          label.setIcon(new ImageIcon(scaleImage(image, scale)));
-    intoImage(image);
+        // image = scaleImage(image, 100);
+        label.setIcon(new ImageIcon(scaleImage(image, scale)));
+        intoImage(image);
     }
 //____________________________________________________________________________________________________________________________________
 
@@ -89,6 +89,7 @@ this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT
         image.setRGB(x,y,color);
 
         label.setIcon(new ImageIcon(scaleImage(image, scale)));
+        IntoFile.saveImage(this.pic);
     }
 
 }
