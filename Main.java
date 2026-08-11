@@ -462,7 +462,7 @@ public class Main {
         if(version ==2){
             for(int k = 0; k < a.length; k++){
                 for( int j = 0; j< a[0].length; j++){
-                    a[k][j]=0;
+                    a[k][j]=0xFFFFFF;
                 }}
 
         }
