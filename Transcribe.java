@@ -1,7 +1,7 @@
 public class Transcribe{
 int[][] a;
 
-public static main(){
+public static void main(String[args]){
 
 a = IntoFile.loadImage("drawn.png");
 Predefined.intoText(a);
