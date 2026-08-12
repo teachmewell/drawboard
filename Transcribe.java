@@ -2,11 +2,14 @@ public class Transcribe{
 
 
 public static void main(String[] args){
+   int color = 0xFF0000;
 
    for(int l = 0; l<args.length; l++){
-    if(args[l].equals("-c")){
-       input = Integer.parseInt(args[l+1]);
-    }
+    if(args[l].equals( "-c")){
+if(l+1 >= args.length){System.out.println("You must write a hexadecimal number after -c. Example: \njava Transcribe -c FF00FF"); break;}
+             if(args[l+1].startsWith("-") ){System.out.println("You must write a hexadecimal number after -c. Example: \njava Transcribe -c FF00FF"); break;}
+            color = args[l+1];
+        }  
       }
   
   // Needs a file named template.png  Will copy all red bits into drawn.png as black ones. 
@@ -24,8 +27,8 @@ if(aglendif ==0){}
   
 for(int y = 0; y<tem[0].length; y++){
   for(int x = 0; x<tem.length; x++){
-// if (tem[x][y]==0xFF0000) { a[x][y]= 0xFF0000; }
- if(tem[x][y] == 0xFF0000 ){a[x][y] = (~a[x][y]) & 0xFFFFFF;}  //takes the inverse
+// if (tem[x][y]== color) { a[x][y]= 0xFF0000; }
+ if(tem[x][y] == color ){a[x][y] = (~a[x][y]) & 0xFFFFFF;}  //takes the inverse
 
 
   }
