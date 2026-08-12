@@ -89,6 +89,7 @@ public class Main {
         boolean entered=true;
         while(entered){
             System.out.println("Do you want autofill? Enter 1 for yes. Enter 0 for no.");
+            System.out.println("Keep in mind: Autofill is very slow. ");
         int af = System.in.read();
         if(af == '1'){autofill=true;entered = false;}
 if(af=='0'){autofill =false; entered=false;}
