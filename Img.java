@@ -190,5 +190,17 @@ int[][] res = new int[png.length][png[0].length - bits];
         return res;
     }
       //___________________________________________________________________________________________________________________________________
- 
+
+public static void autofill(int x, int y, int color, int myColor, int[][]img){
+if(img[x][y]!=myColor){return;}
+    if(img[x][y]==color){return;}
+    else{
+        img[x][y]= color;
+if(x<img.length-1){ autofill(x+1,y,color,myColor,img);}
+ if(x>0){ autofill(x-1,y,color, myColor,img);}
+ if(y< img[0].length-1) {autofill(x,y+1,color,myColor, img);}
+ if(y>0){ autofill(x,y-1,color,myColor, img);}}
+    }
+}
+    
 }
