@@ -203,7 +203,7 @@ public void autofill(int x, int y, int color, int myColor){
 if(pic[x][y]!=myColor){return;}
     if(pic[x][y]==color){return;}
     else{
-        pic.setPixel(x,y,color);
+        this.setPixel(x,y,color);
 if(x< pic.length-1){ autofill(x+1,y,color,myColor);}
  if(x>0){ autofill(x-1,y,color, myColor);}
  if(y< pic[0].length-1) {autofill(x,y+1,color,myColor);}
