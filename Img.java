@@ -111,4 +111,13 @@ public class Img extends JPanel {
         IntoFile.saveImage(this.pic);
     }
 
+    public static int[][] addLeft(int[][] png, int bits){
+int[][] res = new int[png.length + bits][png[].length];
+        for (int h=0; h<png[].length; h++){
+    for(int w=0; w < png.length; w++ ){ 
+        res[w+bits][h] png[w][h];
+    }
+}
+        return res;
+    }
 }
