@@ -110,7 +110,7 @@ public class Img extends JPanel {
         label.setIcon(new ImageIcon(scaleImage(image, scale)));
         IntoFile.saveImage(this.pic);
     }
-
+//_________________________________________________________________________________________________________________________________________
     public static int[][] addLeft(int[][] png, int bits){
 int[][] res = new int[png.length + bits][png[0].length];
         for (int h=0; h<png[0].length; h++){
@@ -120,12 +120,32 @@ int[][] res = new int[png.length + bits][png[0].length];
 }
         return res;
     }
-
+//_______________________________________________________________________________________________________________________________________________
 public static int[][] deleteLeft(int[][] png, int bits){
 int[][] res = new int[png.length - bits][png[0].length];
         for (int h=0; h<png[0].length; h++){
     for(int w=0; w < res.length; w++ ){ 
         res[w][h] = png[w+bits][h];
+    }
+}
+        return res;
+    }
+//___________________________________________________________________________________________________________________________________
+    public static int[][] deleteDown(int[][] png, int bits){
+int[][] res = new int[png.length][png[0].length - bits];
+        for (int h=0; h<res[0].length; h++){
+    for(int w=0; w < res.length; w++ ){ 
+        res[w][h] = png[w][h-bits];
+    }
+}
+        return res;
+    }
+    //___________________________________________________________________________________________________________________________________
+    public static int[][] addDown(int[][] png, int bits){
+int[][] res = new int[png.length][png[0].length + bits];
+        for (int h=0; h<res[0].length; h++){
+    for(int w=0; w < res.length; w++ ){ 
+        res[w][h+bits] = png[w][h];
     }
 }
         return res;
