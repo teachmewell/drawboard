@@ -26,23 +26,18 @@ To run it:
  
 .
 
- ***If you want to read the manual, type in "cat man.txt" into your console.***
-
 .
 
-follow the instructions on the terminal. After editing, the file will be saved as "drawn.png". You can only color with one colour at a time. 
+ ***to read the manual, write this into console:***
 
-.
+ *cat man.txt*
 
-.
 
-If you want a quick start, you can do: 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-*java Main -q*
+You can draw on your own pgns by dragging them into the folder and renaming them to drawn.png However, you may barely see differences of bit-size of big images.
 
-This will initialize quickly. 
-
-.
+You can also have custom sizes by changing them inside Main.java (see the array 'a')
 
 .
 
@@ -54,19 +49,3 @@ If no drawn.png present, you get an error.
 1,2,3 reset drawn.png . 
 
 If you want to save it, you must rename it or move it into another folder. 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-You can draw on your own pgns by dragging them into the folder and renaming them to drawn.png However, you may barely see differences of bit-size of big images.
-
-You can also have custom sizes by changing them inside Main.java (see the array 'a')
-
-.
-
-.
-
-Use the command "java Stat -s <number>" to enlarge your picture. java Stat will make every bit n times as big. 
-
-enter the times by which you want to enlarge into <number> .  Example: 
-
-java Stat -s 10
