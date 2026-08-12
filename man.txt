@@ -50,7 +50,7 @@ java Main -q
 
 java Main -o -c FF00F0 -a -b 20 -s 
 
-java Main -o 
+java Main -s -c 00FF8F 
 
 java Main -c FF00F0 -b 3
 
