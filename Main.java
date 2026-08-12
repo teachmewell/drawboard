@@ -18,6 +18,8 @@ public class Main {
         if(args[l].equals( "-q")){
             a = Predefined.neutralGlobe();
             usedQuick = true;
+            Img img = new Img(a, m, autofill);
+        img.display();
         }
   if(args[l].equals( "-o")){
        a = IntoFile.loadImage("drawn.png");
