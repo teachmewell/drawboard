@@ -23,16 +23,8 @@ if(aglendif ==0){}
 for(int y = 0; y<tem[0].length; y++){
   for(int x = 0; x<tem.length; x++){
 // if (tem[x][y]==0xFF0000) { a[x][y]= 0xFF0000; }
-// if(tem[x][y] == 0xFF0000 ){a[x][y] = (~a[x][y]) & 0xFFFFFF;} 
-if(tem[x][y] == 0xFF0000 ){
-    int c = a[x][y];
+ if(tem[x][y] == 0xFF0000 ){a[x][y] = (~a[x][y]) & 0xFFFFFF;}  //takes the inverse
 
-  int r = (c >> 16) & 0xFF;
-int g = (c >> 8) & 0xFF;
-int b = c & 0xFF;
-
-if (b > r && b > g) {
-    a[x][y] = (b << 16) | (g << 8) | r;
 }
 
 
