@@ -20,8 +20,8 @@ if(aglendif > 0){ tem= Img.addDown(tem, aglendif/2); tem=Img.addUp(tem, aglendif
   
 for(int y = 0; y<tem[0].length; y++){
   for(int x = 0; x<tem.length; x++){
- if (tem[x][y]==0xFF0000) { a[x][y]= 0xFF0000; }
-// if(tem[x][y] == 0xFF0000 ){a[x][y] = (a[x][y]+0xFF00FF) & 0xFFFFFF;} 
+// if (tem[x][y]==0xFF0000) { a[x][y]= 0xFF0000; }
+ if(tem[x][y] == 0xFF0000 ){a[x][y] = (a[x][y]+0xFF00FF) & 0xFFFFFF;} 
     
   }
 }
