@@ -30,7 +30,7 @@ public class Main {
             System.out.println("r= red. o= orange. y= yellow. l= lightgreen.");
             System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
             System.out.println("b= blue. v=violet. m=magenta. d=rose. w=white. n=black.");
-            System.out.println("p= pink. c=olive. w=brown. ");
+            System.out.println("p= pink. f=olive. t=brown. ");
             m = System.in.read();
             switch(m){
                 case 'r': m=0xFF0000; end=false; break;
