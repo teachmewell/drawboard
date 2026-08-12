@@ -16,21 +16,21 @@ winget install --id Git.Git -e --source winget
 
  **SECONDLY:**  ON POWERSHELL, TYPE IN: 
  
-_git clone https://github.com/teachmewell/drawboard.git
+git clone https://github.com/teachmewell/drawboard.git
 
 cd drawboard/
  
 javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java
  
-java Main_
+java Main
  
 .
 
+. if you want to read the manual, type in "cat man.txt" into your console. 
+
 .
 
-follow the instructions on the terminal. After editing, the file will be named "drawn.png". You can only color with one colour at a time. 
-
-if you want to read the manual, type in "cat man.txt" into your console. 
+follow the instructions on the terminal. After editing, the file will be saved as "drawn.png". You can only color with one colour at a time. 
 
 .
 
