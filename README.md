@@ -11,6 +11,11 @@ winget install Microsoft.OpenJDK.17
 winget install --id Git.Git -e --source winget
 
 )
+
+.
+
+.
+
 .
 
  **SECONDLY:**  ON POWERSHELL, TYPE IN: 
@@ -19,7 +24,7 @@ git clone https://github.com/teachmewell/drawboard.git
 
  cd drawboard/
  
- javac Main.java IntoFile.java Img.java
+ javac Main.java IntoFile.java Img.java Predefined.java 
  
  java Main
  
