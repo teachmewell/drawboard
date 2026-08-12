@@ -11,6 +11,7 @@ public class Main {
         int[][] a = new int[120][59]; //was 130 77 before
         int m= (int) (Math.random() * 0xFFFFFF); //color
         boolean autofill = false;
+        int brushsize = 1;
 
         boolean usedQuick = false;
         
@@ -18,7 +19,7 @@ public class Main {
         if(args[l].equals( "-q")){
             a = Predefined.neutralGlobe();
             usedQuick = true;
-            Img img = new Img(a, m, autofill);
+            Img img = new Img(a, m, autofill, brushsize);
         img.display();
             return;
         }
@@ -33,13 +34,19 @@ public class Main {
          if(args[l].equals( "-c")){
 if(l+1 >= args.length){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
              if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
-             int col =Integer.parseInt(args[l+1], 16);
-            m = col;
+             m =Integer.parseInt(args[l+1], 16);
+             l=l++;
+            usedQuick = true;
+        }  
+  if(args[l].equals( "-b")){
+if(l+1 >= args.length){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
+             if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
+             int brushsize =Integer.parseInt(args[l+1], 16);
              l=l++;
             usedQuick = true;
         }  
           
-      }
+      } // end of flagchecks
       
       if(usedQuick == false){
 int version = 0;
@@ -133,14 +140,33 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
         } 
        
         while(true){
+            System.out.println("\n\nWhat Brushsize do you want? You can only enter one number (from 0-9). The brushsize will be <number>*<number>+1 . ");
+        int af = System.in.read();
+            switch(af){
+                case '0': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '1': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '2': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '3': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '4': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '5': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '6': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '7': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '8': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                case '9': brushsize = (af-'1')*(af-'1')+1 ;  break;
+                default: System.out.println("Enter 0-9. ");
+            }
+    }
+
+           while(true){
             System.out.println("\n\nDo you want autofill? Enter 1 for yes. Enter 0 for no.");
             System.out.println("Keep in mind: Autofill is very slow. ");
         int af = System.in.read();
         if(af == '1'){autofill=true;break;}
 if(af=='0'){autofill =false; break;}
     }
-      }  
-        Img img = new Img(a, m, autofill);
+          
+      }
+        Img img = new Img(a, m, autofill, brushsize);
 
         img.display();
       
