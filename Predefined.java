@@ -1,12 +1,25 @@
 public class Predefined{
 
   public static void printText (int[][] png){ // Need to put into loop first. Makes text for an array named a[x][y]. 
-    String txt;
      for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
         System.out.print( "a["+w+"]["+h+"] = " + png[w][h]+"; " );
     }
 }
+  }
+
+  public static void printDiffRed (int[][] png){ //Prints a function that makes loop with all differences to red
+System.out.println("for(int y=0; y<a[0].length; y++){");
+    System.out.println("for(int x=0; x<a.length; x++){");
+     System.out.println("if(false){return;}");
+    
+    for (int h=0; h<png[0].length; h++){
+    for(int w=0; w < png.length; w++ ){ 
+      if(png[w][h] != 0xFF0000){ System.out.println( "else if( x =="+w+ "&& y== "+ h+ "){ a["+w+"]["+h+"] =" + png[w][h] +";}"  );}
+    }
+}
+     System.out.println("else{a[x][y] = 0xFF0000;}");
+    System.out.println("}}"); // for the loop
   }
 
 
