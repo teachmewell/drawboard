@@ -26,7 +26,7 @@ java Main
  
 .
 
-. if you want to read the manual, type in "cat man.txt" into your console. 
+. ***If you want to read the manual, type in "cat man.txt" into your console.***
 
 .
 
