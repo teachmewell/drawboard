@@ -50,6 +50,8 @@ java Main -o -c FF00F0 -a
 
 java Main -o
 
+java Main -c FF00F0 
+
 java Transcribe 
 
 java Transcribe -c FFFFFF
