@@ -46,6 +46,26 @@ public class Main {
             }
         }
 
+     if(version ==3){
+            for(int k = 0; k < a.length; k++){
+                for( int j = 0; j< a[0].length; j++){
+                    a[k][j]= (int)(Math.random() * 0xFFFFFF);
+                }}
+        }
+
+        if(version ==2){
+            for(int k = 0; k < a.length; k++){
+                for( int j = 0; j< a[0].length; j++){
+                    a[k][j]=0xFFFFFF;
+                }}
+
+        }
+
+        if(version == 4){
+            a = IntoFile.loadImage("drawn.png");
+        }
+
+        
         if(version ==1){
             for(int x = 0; x < a.length; x++){
                 for( int y = 0; y< a[0].length; y++){
@@ -452,25 +472,6 @@ public class Main {
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
             }
         }
-        if(version ==3){
-            for(int k = 0; k < a.length; k++){
-                for( int j = 0; j< a[0].length; j++){
-                    a[k][j]= (int)(Math.random() * 0xFFFFFF);
-                }}
-        }
-
-        if(version ==2){
-            for(int k = 0; k < a.length; k++){
-                for( int j = 0; j< a[0].length; j++){
-                    a[k][j]=0xFFFFFF;
-                }}
-
-        }
-
-        if(version == 4){
-            a = IntoFile.loadImage("drawn.png");
-        }
-
         Img img = new Img(a, m);
 
         img.display();
