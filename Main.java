@@ -22,6 +22,7 @@ public class Main {
             usedQuick = true;
             Img img = new Img(a, m, autofill);
         img.display();
+            return;
         }
       }
       
