@@ -27,17 +27,20 @@ public class Main {
         
 
           boolean end = true;
-
-        System.out.println("Do you want a template to start with, a completely white paper, randomly coloured, or from a file(Do not choose this first time, because it would be 0 bytes big)? Enter 1,2,3,4. (default is old one) ");
-        int version = System.in.read();
+while(true){
+        System.out.println("[0] Do you want a template to start with (enter 0)");
+        System.out.println("[1] white png (enter 1)");
+        System.out.println("[2] randomly coloured (enter 2)");
+        System.out.println("[3] from a file(Do not choose this first time, because it would be 0 bytes big) (enter 3)");
+       int version = System.in.read();
         switch(version){
-            case '1': version=1; break;
-            case '2': version=2; break;
-            case '3': version=3; break;
-            case '4': version = 4; break;
-            default: version = 4;
+            case '0': version=1; break;
+            case '1': version=2; break;
+            case '2': version=3; break;
+            case '3': version = 4; break;
         }
-
+}
+            
         while(end) {
             System.out.println("Hello, here you can draw numbers. ");
             System.out.println("choose color, enter their RGB number:");
