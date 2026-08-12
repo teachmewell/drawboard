@@ -8,7 +8,7 @@ public static void main(String[] args){
     if(args[l].equals( "-c")){
 if(l+1 >= args.length){System.out.println("You must write a hexadecimal number after -c. Example: \njava Transcribe -c FF00FF"); break;}
              if(args[l+1].startsWith("-") ){System.out.println("You must write a hexadecimal number after -c. Example: \njava Transcribe -c FF00FF"); break;}
-            color = args[l+1];
+            color = Integer.parseInt(args[l+1], 16);
         }  
       }
   
