@@ -48,7 +48,7 @@ while(true){
             System.out.println("r= red. o= orange. y= yellow. l= lightgreen.");
             System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
             System.out.println("b= blue. v=violet. m=magenta. d=rose. w=white. n=black.");
-            System.out.println("p= pink. f=olive. t=brown. ");
+            System.out.println("p= pink. f=olive. t=brown. q=random.");
             m = System.in.read();
             switch(m){
                 case 'r': m=0xFF0000; end=false; break;
@@ -68,6 +68,7 @@ while(true){
                 case 'p': m=0xFC0FC0; end=false; break;
                 case 'f': m=0x556B2F; end=false; break; 
                 case 't': m=0x895129; end=false; break; 
+                case 'q': m= (int) (Math.random()*0xFFFFFF); end=false; break; 
                         
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
             }
