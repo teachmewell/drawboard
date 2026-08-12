@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 public class Stat{
 
    public static int[][] enlarge(int[][] pic, int bits){
