@@ -29,7 +29,7 @@ Main -a          // setting -a will enable autofill
 Main -c <number> // setting -c number will set the Color  . . . NUMBER MUST BE IN HEXADECIMAL WITHOUT THE LEADING 0x
 Main -b <number> // setting the brushsize.  Brushsize = a square around the point you click. 
 
-Main default before using any flags: new file, random color, no autofill, brush size = 
+Main default before using any flags: new file, random color, no autofill, brush size = 10
 
 
 Stat -s <number> // will increase size of each bit in the picture by <number> times 
@@ -47,7 +47,7 @@ java Main
 
 java Main -q
 
-java Main -o -c FF00F0 -a -b 2
+java Main -o -c FF00F0 -a -b 20
 
 java Main -o 
 
