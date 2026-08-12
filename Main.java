@@ -13,15 +13,16 @@ public class Main {
         boolean autofill = false;
 
         
-      
-        if(args[0]== "-q"){
+      for(int l = 0; l<args.length; l++){
+        if(args[l]== "-q"){
             m = (int) (Math.random() * 0xFFFFFF);
             a = Predefined.neutralGlobe();
             autofill = false;
             Img img = new Img(a, m, autofill);
         img.display();
         }
-        else{
+      }
+      
         
 int version = 0;
           boolean end = true;
@@ -122,6 +123,6 @@ if(af=='0'){autofill =false; break;}
         Img img = new Img(a, m, autofill);
 
         img.display();
-        }
+        
     }
 }
