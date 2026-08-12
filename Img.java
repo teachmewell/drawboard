@@ -210,5 +210,3 @@ if(x< pic.length-1){ autofill(x+1,y,color,myColor);}
  if(y>0){ autofill(x,y-1,color,myColor);}}
     }
 }
-    
-}
