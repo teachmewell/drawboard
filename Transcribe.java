@@ -3,10 +3,12 @@ public class Transcribe{
 
 public static void main(String[] args){
 
-/*int[][] a = IntoFile.loadImage("drawn.png");
-Predefined.printText(a);*/
-
-//____________________________________________________________________________________________________________________________________
+   for(int l = 0; l<args.length; l++){
+    if(args[l].equals("-c")){
+       input = Integer.parseInt(args[l+1]);
+    }
+      }
+  
   // Needs a file named template.png  Will copy all red bits into drawn.png as black ones. 
   int[][] a = IntoFile.loadImage("drawn.png");
   int[][] tem = IntoFile.loadImage("template.png");
