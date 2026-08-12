@@ -11,6 +11,9 @@ public class Main {
         int[][] a = new int[130][77];
         int m=0;
 
+       
+        
+
         System.out.println("Do you want a template to start with, a completely white paper, randomly coloured, or from a file(Do not choose this first time, because it would be 0 bytes big)? Enter 1,2,3,4. (default is old one) ");
         int version = System.in.read();
         switch(version){
@@ -80,8 +83,14 @@ public class Main {
 
 
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
-        }
-        Img img = new Img(a, m);
+        } 
+
+        boolean autofill = false;
+        System.out.println("Do you want autofill? Enter 1 for yes. Everything else means no.");
+        af = System.in.read();
+        if(af == 1){autofill=true;}
+        
+        Img img = new Img(a, m, autofill);
 
         img.display();
 
