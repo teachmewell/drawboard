@@ -34,7 +34,7 @@ System.out.println("for(int y=0; y<a[0].length; y++){");
     int[][] a = new int[130][77];
    for(int y=0; y<a[0].length; y++){
 for(int x=0; x<a.length; x++){
-if(false){return;}
+if(false){return null;}
 else if( x ==45&& y== 18){ a[45][18] =16776960;}
 else if( x ==46&& y== 18){ a[46][18] =16776960;}
 else if( x ==43&& y== 19){ a[43][19] =16776960;}
