@@ -154,7 +154,7 @@ int[][] res = new int[png.length - bits][png[0].length];
 int[][] res = new int[png.length][png[0].length - bits];
         for (int h=0; h<res[0].length; h++){
     for(int w=0; w < res.length; w++ ){ 
-        res[w][h] = png[w][h-bits];
+        res[w][h] = png[w][h+bits];
     }
 }
         return res;
