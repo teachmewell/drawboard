@@ -26,7 +26,7 @@ public class Main {
             System.out.println("choose color, enter their RGB number:");
             System.out.println("r= red. o= orange. y= yellow. l= lightgreen.");
             System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
-            System.out.println("b= blue. v=violet. m=magenta. d=rose. w=white. n=black.");+
+            System.out.println("b= blue. v=violet. m=magenta. d=rose. w=white. n=black.");
             System.out.println("p= pink. v=olive. b=brown. ");
             m = System.in.read();
             switch(m){
