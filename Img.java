@@ -181,9 +181,9 @@ int[][] res = new int[png.length][png[0].length + bits];
     }
     //___________________________________________________________________________________________________________________________________
     public static int[][] deleteDown(int[][] png, int bits){
-int[][] res = new int[png.length][png[0].length + bits];
-        for (int h=0; h<png[0].length; h++){
-    for(int w=0; w < png.length; w++ ){ 
+int[][] res = new int[png.length][png[0].length - bits];
+        for (int h=0; h<res[0].length; h++){
+    for(int w=0; w < res.length; w++ ){ 
         res[w][h] = png[w][h];
     }
 }
