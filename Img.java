@@ -112,10 +112,10 @@ public class Img extends JPanel {
     }
 
     public static int[][] addLeft(int[][] png, int bits){
-int[][] res = new int[png.length + bits][png[].length];
-        for (int h=0; h<png[].length; h++){
+int[][] res = new int[png.length + bits][png[0].length];
+        for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
-        res[w+bits][h] png[w][h];
+        res[w+bits][h] = png[w][h];
     }
 }
         return res;
