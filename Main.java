@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 public class Main {
     public static void main(String[] args) throws IOException {
         
-        int[][] a = new int[130][77];
+        int[][] a = new int[120][59]; //was 130 77 before
         int m=0;
         boolean autofill = false;
 
