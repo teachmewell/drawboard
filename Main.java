@@ -12,18 +12,20 @@ public class Main {
         int m=0;
         boolean autofill = false;
 
+        boolean usedQuick = false;
         
       for(int l = 0; l<args.length; l++){
         if(args[l]== "-q"){
             m = (int) (Math.random() * 0xFFFFFF);
             a = Predefined.neutralGlobe();
             autofill = false;
+            usedQuuick = true;
             Img img = new Img(a, m, autofill);
         img.display();
         }
       }
       
-        
+      if(usedQuick == false){  
 int version = 0;
           boolean end = true;
 while(true){
@@ -123,6 +125,6 @@ if(af=='0'){autofill =false; break;}
         Img img = new Img(a, m, autofill);
 
         img.display();
-        
+      }
     }
 }
