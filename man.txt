@@ -27,6 +27,7 @@ Main -q          // -q starts immediately and ignores others : random color, new
 Main -o          // setting this flag will run the old file (drawn.png). Not setting this means the old file gets lost.  
 Main -a          // setting -a will enable autofill
 Main -c <number> // setting -c number will set the Color  . . . NUMBER MUST BE IN HEXADECIMAL WITHOUT THE LEADING 0x
+Main -b <number> // setting the brushsize.  Brushsize = a square around the point you click. 
 
 Main default before using any flags: new file, random color, no autofill
 
@@ -46,11 +47,11 @@ java Main
 
 java Main -q
 
-java Main -o -c FF00F0 -a
+java Main -o -c FF00F0 -a -b 2
 
-java Main -o
+java Main -o 
 
-java Main -c FF00F0 
+java Main -c FF00F0 -b 3
 
 java Transcribe 
 
