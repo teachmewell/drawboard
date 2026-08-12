@@ -138,8 +138,10 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
 
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
         } 
-       
-        while(true){
+
+          brushsize = 0;
+        while(brushsize==0){
+            
             System.out.println("\n\nWhat Brushsize do you want? You can only enter one number (from 0-9). The brushsize will be <number>*<number>+1 . ");
         int af = System.in.read();
             switch(af){
