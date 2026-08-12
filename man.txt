@@ -28,6 +28,7 @@ Main -o          // setting this flag will run the old file (drawn.png). Not set
 Main -a          // setting -a will enable autofill
 Main -c <number> // setting -c number will set the Color  . . . NUMBER MUST BE IN HEXADECIMAL WITHOUT THE LEADING 0x
 Main -b <number> // setting the brushsize.  Brushsize = a square around the point you click. 
+Main -s <number> // whether to scale the image. Scaling image costs time, but if your picture is only a few bit big, it is worth it.
 
 Main default before using any flags: new file, random color, no autofill, brush size = 10
 
