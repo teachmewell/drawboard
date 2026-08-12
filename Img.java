@@ -12,14 +12,14 @@ public class Img extends JPanel {
     double scale;
     JLabel label;
 
-    public Img(int[][] img, int rgb, boolean autofill, int brushsize){
+    public Img(int[][] img, int rgb, boolean autofill, int brushsize, boolean shouldScale){
      // int z =1000 / Math.max(img[0].length, img.length);
       //  if(z<1){z=1;}
         this.scale = Math.min(1000.0/img[0].length,  1000.0/img.length);
         this.color = rgb;
         this.pic = img;
         this.image = new BufferedImage(pic.length, pic[0].length, BufferedImage.TYPE_INT_RGB);
-        label = new JLabel(new ImageIcon( scaleImage(image, scale) ));
+        label = new JLabel(new ImageIcon( scaleImage(image, scale, shouldScale) ));
 
         label.addMouseMotionListener(new MouseAdapter() {
 
@@ -69,13 +69,15 @@ public class Img extends JPanel {
                 else{ image.setRGB(x, y, pic[x][y]); }
             }
         } //calculation of every pixel done.
-        // image = scaleImage(image, 100);
-        label.setIcon(new ImageIcon(scaleImage(image, scale)));
+        // image = scaleImage(image, 100, true);
+        label.setIcon(new ImageIcon(scaleImage(image, scale, true)));
         intoImage(image);
     }
 //____________________________________________________________________________________________________________________________________
 
-    public BufferedImage scaleImage(BufferedImage old, double by){
+    public BufferedImage scaleImage(BufferedImage old, double by, boolean shouldScale){
+
+        if(!shouldScale){return old;}
         int newWidth = (int) Math.max(1, old.getWidth() * by);
          int newHeight = (int) Math.max(1, old.getHeight() * by);
 
@@ -119,11 +121,11 @@ public class Img extends JPanel {
         frame.setVisible(true);
     }
 
-    public void setPixel(int x, int y, int color){
+    public void setPixel(int x, int y, int color, boolean shouldScale){
         pic[x][y] = color;
         image.setRGB(x,y,color);
 
-     label.setIcon(new ImageIcon(scaleImage(image, scale)));
+     label.setIcon(new ImageIcon(scaleImage(image, scale, shouldScale )));
       //  IntoFile.saveImage(this.pic);
     }
 //_________________________________________________________________________________________________________________________________________
