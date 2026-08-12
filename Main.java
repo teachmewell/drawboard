@@ -11,7 +11,7 @@ public class Main {
         int[][] a = new int[120][59]; //was 130 77 before
         int m= (int) (Math.random() * 0xFFFFFF); //color
         boolean autofill = false;
-        int brushsize = (int) (Math.min(a.length / 100, a[0].length/100))+1;
+        int brushsize = 10;
 
         boolean usedQuick = false;
         
