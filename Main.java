@@ -2,7 +2,8 @@ import java.io.IOException;
 import java.lang.Math;
 import java.awt.image.BufferedImage;
 
-//WILL SAVE INTO DRAWN.PNG
+//WILL SAVE THE PICTURE INTO DRAWN.PNG
+// USING ANYTHING OTHER THAN OPTION 4 WILL OVERWRITE YOUR DRAWING
 
 public class Main {
     public static void main(String[] args) throws IOException {
