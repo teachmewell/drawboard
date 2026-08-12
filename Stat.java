@@ -18,12 +18,12 @@ for(int x = 0; x< pic.length; x++){
        int[][] a = IntoFile.loadImage("drawn.png");
       System.out.println("Enlarge by how much? (one bit should become how many bits)");
       boolean loo=true;
+      int input = 1;
     while(loo){
-      System.out.println("Only input numbers 0-9 . ");
+      System.out.println("Only input numbers 1-9 . ");
       
-      int input = System.in.read();
+      input = System.in.read();
       switch(input){
-         case '0': input = input -'0'; loo=false; break; 
          case '1': input = input -'0'; loo=false; break; 
          case '2': input = input -'0'; loo=false; break; 
          case '3': input = input -'0'; loo=false; break; 
