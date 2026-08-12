@@ -9,24 +9,36 @@ public class Main {
     public static void main(String[] args) throws IOException {
         
         int[][] a = new int[120][59]; //was 130 77 before
-        int m=0;
+        int m= (int) (Math.random() * 0xFFFFFF); //color
         boolean autofill = false;
 
         boolean usedQuick = false;
         
       for(int l = 0; l<args.length; l++){
         if(args[l].equals( "-q")){
-            m = (int) (Math.random() * 0xFFFFFF);
             a = Predefined.neutralGlobe();
-            autofill = false;
             usedQuick = true;
-            Img img = new Img(a, m, autofill);
-        img.display();
-            return;
         }
+  if(args[l].equals( "-o")){
+       a = IntoFile.loadImage("drawn.png");
+            usedQuick = true;
+        }
+ if(args[l].equals( "-a")){
+            usedQuick = true;
+     autofill = true;
+        }
+         if(args[l].equals( "-c")){
+if(l+1 >= args.length){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
+             if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
+             int col =Integer.parseInt(args[l+1], 16);
+            m = col;
+             l=l++;
+            usedQuick = true;
+        }  
+          
       }
       
-      if(usedQuick == false){  
+      if(usedQuick == false){
 int version = 0;
           boolean end = true;
 while(true){
@@ -122,10 +134,10 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
         if(af == '1'){autofill=true;break;}
 if(af=='0'){autofill =false; break;}
     }
-        
+      }  
         Img img = new Img(a, m, autofill);
 
         img.display();
-      }
+      
     }
 }
