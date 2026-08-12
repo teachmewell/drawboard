@@ -25,11 +25,7 @@ for(int y = 0; y<tem[0].length; y++){
 // if (tem[x][y]==0xFF0000) { a[x][y]= 0xFF0000; }
  if(tem[x][y] == 0xFF0000 ){a[x][y] = (~a[x][y]) & 0xFFFFFF;}  //takes the inverse
 
-}
 
-
-  
-}
   }
 }
 
