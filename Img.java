@@ -28,10 +28,9 @@ public class Img extends JPanel {
                 int x = (int) (e.getX() / scale);
                 int y = (int) (e.getY()/ scale);
                 for(int u = 0; u<brushsize>>1; u++){
-                setPixel(x+u,y,color);
-                setPixel(x-u,y,color);
-                setPixel(x,y+u,color);
-                setPixel(x,y-u,color);
+                    for(int w = 0; w < brushsize>>1; w++){
+                setPixel(x+u,y+w,color);
+                }
                 }
             }}); // END OF MOUSEMOTIONLISTENER
         
@@ -43,11 +42,10 @@ public class Img extends JPanel {
                 int x = (int) (e.getX() /scale);
                 int y = (int) (e.getY()/ scale);
                 //System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
-                for(int u = 0; u<brushsize>>1; u++){
-                setPixel(x+u,y,color);
-                setPixel(x-u,y,color);
-                setPixel(x,y+u,color);
-                setPixel(x,y-u,color);
+                  for(int u = 0; u<brushsize>>1; u++){
+                    for(int w = 0; w < brushsize>>1; w++){
+                setPixel(x+u,y+w,color);
+                }
                 }
             }else{
                       int x = (int) (e.getX() /scale);
