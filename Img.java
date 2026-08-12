@@ -12,7 +12,7 @@ public class Img extends JPanel {
     double scale;
     JLabel label;
 
-    public Img(int[][] img, int rgb){
+    public Img(int[][] img, int rgb, boolean autofill){
      // int z =1000 / Math.max(img[0].length, img.length);
       //  if(z<1){z=1;}
         this.scale = Math.min(1000.0/img[0].length,  1000.0/img.length);
@@ -34,10 +34,18 @@ public class Img extends JPanel {
                                      label.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                if(!autofill){
                 int x = (int) (e.getX() /scale);
                 int y = (int) (e.getY()/ scale);
-                System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
+                //System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
                 setPixel(x,y,color);
+            }else{
+                      int x = (int) (e.getX() /scale);
+                int y = (int) (e.getY()/ scale);
+               // System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
+                setPixel(x,y,color, img[x][y]);
+            }
+            
             }
 
                                          
@@ -191,15 +199,15 @@ int[][] res = new int[png.length][png[0].length - bits];
     }
       //___________________________________________________________________________________________________________________________________
 
-public static void autofill(int x, int y, int color, int myColor, int[][]img){
-if(img[x][y]!=myColor){return;}
-    if(img[x][y]==color){return;}
+public void autofill(int x, int y, int color, int myColor){
+if(pic[x][y]!=myColor){return;}
+    if(pic[x][y]==color){return;}
     else{
-        img[x][y]= color;
-if(x<img.length-1){ autofill(x+1,y,color,myColor,img);}
- if(x>0){ autofill(x-1,y,color, myColor,img);}
- if(y< img[0].length-1) {autofill(x,y+1,color,myColor, img);}
- if(y>0){ autofill(x,y-1,color,myColor, img);}}
+        pic.setPixel(x,y,color);
+if(x< pic.length-1){ autofill(x+1,y,color,myColor);}
+ if(x>0){ autofill(x-1,y,color, myColor);}
+ if(y< pic[0].length-1) {autofill(x,y+1,color,myColor);}
+ if(y>0){ autofill(x,y-1,color,myColor);}}
     }
 }
     
