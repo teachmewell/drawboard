@@ -123,8 +123,8 @@ public class Img extends JPanel {
         pic[x][y] = color;
         image.setRGB(x,y,color);
 
-        label.setIcon(new ImageIcon(scaleImage(image, scale)));
-        IntoFile.saveImage(this.pic);
+      //  label.setIcon(new ImageIcon(scaleImage(image, scale)));
+      //  IntoFile.saveImage(this.pic);
     }
 //_________________________________________________________________________________________________________________________________________
     public static int[][] addLeft(int[][] png, int bits){
