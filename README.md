@@ -35,7 +35,9 @@ To run it:
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-You can draw on your own pgns by dragging them into the folder and renaming them to drawn.png However, you may barely see differences of bit-size of big images.
+You can draw on your own pgns by dragging them into the folder and renaming them to drawn.png 
+
+However, you may barely see differences because of the big sizes of images.
 
 You can also have custom sizes by changing them inside Main.java (see the array 'a')
 
