@@ -49,7 +49,7 @@ public class Main {
                 case 'w': m=0xFFFFFF; end=false; break;
                 case 'p': m=0xFC0FC0; end=false; break;
                 case 'f': m=0x556B2F; end=false; break; 
-                case 't': m=0xB94E48; end=false; break; 
+                case 't': m=0x321414; end=false; break; 
                         
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
             }
@@ -86,9 +86,13 @@ public class Main {
         } 
 
         boolean autofill = false;
-        System.out.println("Do you want autofill? Enter 1 for yes. Everything else means no.");
-       int af = System.in.read();
-        if(af == 1){autofill=true;}
+        boolean entered=true;
+        while(entered){
+            System.out.println("Do you want autofill? Enter 1 for yes. Enter 0 for no.");
+        int af = System.in.read();
+        if(af == '1'){autofill=true;entered = false;}
+if(af=='0'){autofill =false; entered=false;}
+    }
         
         Img img = new Img(a, m, autofill);
 
