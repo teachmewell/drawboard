@@ -4,7 +4,7 @@ public class Predefined{
     String txt;
      for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
-        System.out.print( "if(x == "+ w + "&& y =="+ h+"){ a[x][y] = " + png[w][h]+";}" );
+        System.out.print( "a["+w+"]["+h+"] = " + png[w][h]+"; " );
     }
 }
   }
