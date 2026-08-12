@@ -18,7 +18,7 @@ else if(alendif > 0){ tem= Img.addRight(tem, alendif-alendif/2); tem=Img.addLeft
   else{ a = Img.addRight(a, -alendif/2); a=Img.addLeft(a, alendif/2-alendif); }
 if(aglendif ==0){}
  else if(aglendif > 0){ tem= Img.addDown(tem, aglendif/2); tem=Img.addUp(tem, aglendif-aglendif/2);  }
-  else{ a = Img.addDown(a, aglendif/2-aglendif); a=Img.addUp(a, -aglendif);}
+  else{ a = Img.addDown(a, -aglendif/2); a=Img.addUp(a, -aglendif-(-aglendif/2));}
   
 for(int y = 0; y<tem[0].length; y++){
   for(int x = 0; x<tem.length; x++){
