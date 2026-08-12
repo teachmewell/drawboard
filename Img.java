@@ -180,7 +180,7 @@ int[][] res = new int[png.length][png[0].length + bits];
         return res;
     }
     //___________________________________________________________________________________________________________________________________
-    public static int[][] deleteUp(int[][] png, int bits){
+    public static int[][] deleteDown(int[][] png, int bits){
 int[][] res = new int[png.length][png[0].length + bits];
         for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
