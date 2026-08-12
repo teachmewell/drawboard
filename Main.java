@@ -17,7 +17,7 @@ public class Main {
         int standard = System.in.read();
         if(standard == '1'){
             m = (int) (Math.random() * 0xFFFFFF);
-            a = Predefined.globeTemplate();
+            a = Predefined.neutralGlobe();
             autofill = false;
             Img img = new Img(a, m, autofill);
         img.display();
