@@ -67,4 +67,8 @@ You can also have custom sizes by changing them inside Main.java (see the array 
 
 .
 
-Use the command "java Stat" to enlarge your picture. java Stat will make every bit n times as big. 
+Use the command "java Stat -s <number>" to enlarge your picture. java Stat will make every bit n times as big. 
+
+enter the times by which you want to enlarge into <number> .  Example: 
+
+java Stat -s 10
