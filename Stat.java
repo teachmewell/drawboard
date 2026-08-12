@@ -13,5 +13,9 @@ for(int x = 0; x< pic.length; x++){
     }
 
   //______________________________________________________________________________________________________________________________
-  
+
+   public static void main(String[] args){
+       int[][] a = IntoFile.loadImage("drawn.png");
+   IntoFile.saveImage(a);
+   }
 }
