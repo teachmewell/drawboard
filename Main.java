@@ -87,7 +87,7 @@ public class Main {
 
         boolean autofill = false;
         System.out.println("Do you want autofill? Enter 1 for yes. Everything else means no.");
-        af = System.in.read();
+       int af = System.in.read();
         if(af == 1){autofill=true;}
         
         Img img = new Img(a, m, autofill);
