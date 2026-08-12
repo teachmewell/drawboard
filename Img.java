@@ -12,7 +12,7 @@ public class Img extends JPanel {
     double scale;
     JLabel label;
 
-    public Img(int[][] img, int rgb, boolean autofill){
+    public Img(int[][] img, int rgb, boolean autofill, int brushsize){
      // int z =1000 / Math.max(img[0].length, img.length);
       //  if(z<1){z=1;}
         this.scale = Math.min(1000.0/img[0].length,  1000.0/img.length);
@@ -27,7 +27,12 @@ public class Img extends JPanel {
             public void mouseDragged(MouseEvent e){
                 int x = (int) (e.getX() / scale);
                 int y = (int) (e.getY()/ scale);
-                setPixel(x,y,color);
+                for(int u = 0; u<brushsize>>1; u++){
+                setPixel(x+u,y,color);
+                setPixel(x-u,y,color);
+                setPixel(x,y+u,color);
+                setPixel(x,y-u,color);
+                }
             }}); // END OF MOUSEMOTIONLISTENER
         
                                     
@@ -38,7 +43,12 @@ public class Img extends JPanel {
                 int x = (int) (e.getX() /scale);
                 int y = (int) (e.getY()/ scale);
                 //System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
-                setPixel(x,y,color);
+                for(int u = 0; u<brushsize>>1; u++){
+                setPixel(x+u,y,color);
+                setPixel(x-u,y,color);
+                setPixel(x,y+u,color);
+                setPixel(x,y-u,color);
+                }
             }else{
                       int x = (int) (e.getX() /scale);
                 int y = (int) (e.getY()/ scale);
