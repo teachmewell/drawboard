@@ -1,0 +1,51 @@
+This is manual. 
+
+____________________________________________________________________________________________________________________
+first step: 
+
+to compile (aka update to newest runnable version): 
+javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java
+
+to run normal editor: 
+java Main
+
+_____________________________________________________________________________________________________________________
+. runnables:  Main, Stat, Transcribe
+
+Main  =  main Program. Allows you to edit on a picture, which will be saved into the file named "drawn.png"
+Transcribe =  Program which prints the red bits inside "template.png"  onto  "drawn.png"
+Stat  =  Program which will increase the size of each bit inside "drawn.png" by some value 
+
+(to run each, do 
+java <name>
+ inside console)
+_____________________________________________________________________________________________________________________
+
+Flags:      
+default before using any flags: new file, random color, no autofill
+
+Main -q          // -q starts immediately and ignores others : random color, new file of template, no autofill
+Main -o          // setting this flag will run the old file (drawn.png). Not setting this means the old file gets lost.  
+Main -a          // setting -a will enable autofill
+Main -c <number> // setting -c number will set the Color  . . . NUMBER MUST BE IN HEXADECIMAL WITHOUT THE LEADING 0x
+
+
+Stat -s <number> // will increase size of each bit in the picture by <number> times 
+default: 5
+
+____________________________________________________________________________________________________________________
+
+examples: 
+
+java Main
+
+java Main -q
+
+java Main -o -c FF00F0 -a
+
+java Transcribe 
+
+java Stat 
+
+java Stat -s 2
+
