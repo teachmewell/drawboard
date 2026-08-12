@@ -28,16 +28,16 @@ public class Main {
 int version = 0;
           boolean end = true;
 while(true){
-        System.out.println("\n \n what do you want to start with? \n [0] a template (enter 0)");
-        System.out.println("[1] white png (enter 1)");
-        System.out.println("[2] randomly coloured (enter 2)");
-        System.out.println("[3] from a file(Do not choose this first time, because it would be 0 bytes big) (enter 3)");
+        System.out.println("\n \n what do you want to start with? \n[1] a template (enter 1)");
+        System.out.println("[2] white png (enter 2)");
+        System.out.println("[3] randomly coloured (enter 3)");
+        System.out.println("[4] from a file(Do not choose this first time, because it would be 0 bytes big) (enter 4)");
        version = System.in.read();
         switch(version){
-            case '0': version=1; break;
-            case '1': version=2; break;
-            case '2': version=3; break;
-            case '3': version = 4; break;
+            case '1': version=1; break;
+            case '2': version=2; break;
+            case '3': version=3; break;
+            case '4': version = 4; break;
         }
     if(version <5 && version >0){break;}
 }
