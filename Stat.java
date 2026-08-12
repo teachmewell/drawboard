@@ -16,7 +16,7 @@ for(int x = 0; x< pic.length; x++){
 
   //______________________________________________________________________________________________________________________________
 
-   public static void main(String[] args){
+   public static void main(String[] args) throws IOException {
        int[][] a = IntoFile.loadImage("drawn.png");
       System.out.println("Enlarge by how much? (one bit should become how many bits)");
       boolean loo=true;
