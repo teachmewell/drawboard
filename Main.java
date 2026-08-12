@@ -14,7 +14,7 @@ public class Main {
 
         
       
-        if(args[1]== "-q"){
+        if(args[0]== "-q"){
             m = (int) (Math.random() * 0xFFFFFF);
             a = Predefined.neutralGlobe();
             autofill = false;
