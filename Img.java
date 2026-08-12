@@ -129,9 +129,28 @@ int[][] res = new int[png.length - bits][png[0].length];
     }
 }
         return res;
+    }//_________________________________________________________________________________________________________________________________________
+    public static int[][] addRight(int[][] png, int bits){
+int[][] res = new int[png.length + bits][png[0].length];
+        for (int h=0; h<png[0].length; h++){
+    for(int w=0; w < png.length; w++ ){ 
+        res[w][h] = png[w][h];
+    }
+}
+        return res;
+    }
+//_______________________________________________________________________________________________________________________________________________
+public static int[][] deleteRight(int[][] png, int bits){
+int[][] res = new int[png.length - bits][png[0].length];
+        for (int h=0; h<res[0].length; h++){
+    for(int w=0; w < res.length; w++ ){ 
+        res[w][h] = png[w][h];
+    }
+}
+        return res;
     }
 //___________________________________________________________________________________________________________________________________
-    public static int[][] deleteDown(int[][] png, int bits){
+    public static int[][] deleteUp(int[][] png, int bits){
 int[][] res = new int[png.length][png[0].length - bits];
         for (int h=0; h<res[0].length; h++){
     for(int w=0; w < res.length; w++ ){ 
@@ -141,7 +160,7 @@ int[][] res = new int[png.length][png[0].length - bits];
         return res;
     }
     //___________________________________________________________________________________________________________________________________
-    public static int[][] addDown(int[][] png, int bits){
+    public static int[][] addUp(int[][] png, int bits){
 int[][] res = new int[png.length][png[0].length + bits];
         for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
@@ -150,5 +169,26 @@ int[][] res = new int[png.length][png[0].length + bits];
 }
         return res;
     }
-    
+     //___________________________________________________________________________________________________________________________________
+    public static int[][] addDown(int[][] png, int bits){
+int[][] res = new int[png.length][png[0].length + bits];
+        for (int h=0; h<png[0].length; h++){
+    for(int w=0; w < png.length; w++ ){ 
+        res[w][h] = png[w][h];
+    }
+}
+        return res;
+    }
+    //___________________________________________________________________________________________________________________________________
+    public static int[][] deleteUp(int[][] png, int bits){
+int[][] res = new int[png.length][png[0].length + bits];
+        for (int h=0; h<png[0].length; h++){
+    for(int w=0; w < png.length; w++ ){ 
+        res[w][h] = png[w][h];
+    }
+}
+        return res;
+    }
+      //___________________________________________________________________________________________________________________________________
+ 
 }
