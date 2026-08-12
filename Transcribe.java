@@ -27,11 +27,16 @@ for(int y = 0; y<tem[0].length; y++){
 if(tem[x][y] == 0xFF0000 ){
     int c = a[x][y];
 
-int r = (c >> 16) & 0xFF;
+  int r = (c >> 16) & 0xFF;
 int g = (c >> 8) & 0xFF;
 int b = c & 0xFF;
 
-a[x][y] = (g << 16) | (b << 8) | r;
+if (b > r && b > g) {
+    a[x][y] = (b << 16) | (g << 8) | r;
+}
+
+
+  
 }
   }
 }
