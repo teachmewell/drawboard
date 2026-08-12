@@ -23,7 +23,13 @@ if(aglendif ==0){}
 for(int y = 0; y<tem[0].length; y++){
   for(int x = 0; x<tem.length; x++){
 // if (tem[x][y]==0xFF0000) { a[x][y]= 0xFF0000; }
- if(tem[x][y] == 0xFF0000 ){a[x][y] = ((a[x][y]+0x00FFFF) & 0xFFFFFF);} 
+// if(tem[x][y] == 0xFF0000 ){a[x][y] = ((a[x][y]+0x00FFFF) & 0xFFFFFF);} 
+
+    if (tem[x][y] == 0xFF0000) {
+    System.out.printf("x=%d y=%d color=%06X%n", x, y, a[x][y]);
+    a[x][y] = a[x][y] + 0xFF0000;
+}
+    
     
   }
 }
