@@ -44,9 +44,9 @@ while(true){
         while(end) {
             System.out.println("\n\nHello, here you can draw. ");
             System.out.println("choose color, enter their character:");
-            System.out.println("r= red. o= orange. y= yellow. l= lightgreen.");
+            System.out.println("r= red. o= orange. y= yellow. x=dark yellow. l= lightgreen.");
             System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
-            System.out.println("b= blue. v=violet. m=magenta. d=rose. w=white. n=black.");
+            System.out.println("b= blue. v=violet. e=light blue. i=purple. m=magenta. d=rose. w=white. n=black.");
             System.out.println("p= pink. f=olive. t=brown. q=random.");
             m = System.in.read();
             switch(m){
@@ -59,7 +59,10 @@ while(true){
                 case 'c': m=0x00FFFF; end=false; break;
                 case 'a': m=0x07F0FF; end=false; break;
                 case 'b': m=0x0000FF; end=false; break;
+                case 'x': m=0xFFCC33; end=false; break;
                 case 'v': m=0x7F00FF; end=false; break;
+                case 'e': m=0x9999FF; end=false; break;
+                case 'i': m=0x4B0082; end=false; break;
                 case 'm': m=0xFF00FF; end=false; break;
                 case 'd': m=0xFF007F; end=false; break;
                 case 'n': m=0x000000; end=false; break;
