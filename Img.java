@@ -123,7 +123,7 @@ int[][] res = new int[png.length + bits][png[0].length];
 //_______________________________________________________________________________________________________________________________________________
 public static int[][] deleteLeft(int[][] png, int bits){
 int[][] res = new int[png.length - bits][png[0].length];
-        for (int h=0; h<png[0].length; h++){
+        for (int h=0; h<res[0].length; h++){
     for(int w=0; w < res.length; w++ ){ 
         res[w][h] = png[w+bits][h];
     }
@@ -143,8 +143,8 @@ int[][] res = new int[png.length][png[0].length - bits];
     //___________________________________________________________________________________________________________________________________
     public static int[][] addDown(int[][] png, int bits){
 int[][] res = new int[png.length][png[0].length + bits];
-        for (int h=0; h<res[0].length; h++){
-    for(int w=0; w < res.length; w++ ){ 
+        for (int h=0; h<png[0].length; h++){
+    for(int w=0; w < png.length; w++ ){ 
         res[w][h+bits] = png[w][h];
     }
 }
