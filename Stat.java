@@ -8,7 +8,7 @@ for( int y = 0; y < pic[0].length ; y++){
 for(int x = 0; x< pic.length; x++){
 
   for(int z = 0; z< bits; z++){
-    for (int m = 0; m<bits; m++){res[x+z][y+m] = pic[x][y]; }
+    for (int m = 0; m<bits; m++){res[x * bits +z][y*bits+m] = pic[x][y]; }
   }
 }
 }
@@ -39,7 +39,7 @@ for(int x = 0; x< pic.length; x++){
             }
        if(input <= 36 && input>0){ break; }
     }
-      enlarge(a, input);
+    a =  enlarge(a, input);
    IntoFile.saveImage(a);
    }
 }
