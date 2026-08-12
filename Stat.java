@@ -31,4 +31,12 @@ for(int x = 0; x< pic.length; x++){
    IntoFile.saveImage(a);
    
 }
+ //______________________________________________________________________________________________________________________________
+/* public static void main(String[] args) {
+     int[][] a = IntoFile.loadImage("drawn.png");
+    Predefined.printDiffWhite(a);
+ }*/
+
+   
+   
 }
