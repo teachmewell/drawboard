@@ -4,9 +4,9 @@ To run it:
  
 (on powershell:
 
-winget install Microsoft.OpenJDK.19
+*winget install Microsoft.OpenJDK.19*
 
-winget install --id Git.Git -e --source winget
+*winget install --id Git.Git -e --source winget*
 
 )
 
@@ -16,17 +16,17 @@ winget install --id Git.Git -e --source winget
 
  **SECONDLY:**  ON POWERSHELL, TYPE IN: 
  
-git clone https://github.com/teachmewell/drawboard.git
+*git clone https://github.com/teachmewell/drawboard.git*
 
-cd drawboard/
+*cd drawboard/*
  
-javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java
+*javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java*
  
-java Main
+*java Main*
  
 .
 
-. ***If you want to read the manual, type in "cat man.txt" into your console.***
+ ***If you want to read the manual, type in "cat man.txt" into your console.***
 
 .
 
@@ -38,7 +38,7 @@ follow the instructions on the terminal. After editing, the file will be saved a
 
 If you want a quick start, you can do: 
 
-java Main -q
+*java Main -q*
 
 This will initialize quickly. 
 
