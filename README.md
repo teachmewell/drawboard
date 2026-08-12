@@ -29,9 +29,24 @@ git clone https://github.com/teachmewell/drawboard.git
  java Main
  
 .
+
 .
 
 follow the instructions on the terminal. After editing, the file will be named "drawn.png". You can only color with one colour at a time. 
+
+.
+
+.
+
+If you want a quick start, you can do: 
+
+java Main -q
+
+This will initialize quickly. 
+
+.
+
+.
 
 
 If you run again and choose 4 as option, then drawn.png will be automatically opened. 
