@@ -29,7 +29,7 @@ public class Img extends JPanel {
                 int y = (int) (e.getY()/ scale);
                 for(int u = 0; u<brushsize>>1; u++){
                     for(int w = 0; w < brushsize>>1; w++){
-                setPixel(x+u,y+w,color);
+                setPixel(x+w,y+u,color);
                 }
                 }
             }}); // END OF MOUSEMOTIONLISTENER
@@ -44,7 +44,7 @@ public class Img extends JPanel {
                 //System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
                   for(int u = 0; u<brushsize>>1; u++){
                     for(int w = 0; w < brushsize>>1; w++){
-                setPixel(x+u,y+w,color);
+                setPixel(x+w,y+u,color);
                 }
                 }
             }else{
