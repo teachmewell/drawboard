@@ -28,7 +28,7 @@ public class Main {
 int version = 0;
           boolean end = true;
 while(true){
-        System.out.println("[0] Do you want a template to start with (enter 0)");
+        System.out.println("\n \n what do you want to start with? \n [0] a template (enter 0)");
         System.out.println("[1] white png (enter 1)");
         System.out.println("[2] randomly coloured (enter 2)");
         System.out.println("[3] from a file(Do not choose this first time, because it would be 0 bytes big) (enter 3)");
@@ -39,7 +39,7 @@ while(true){
             case '2': version=3; break;
             case '3': version = 4; break;
         }
-    if(version != 0){break;}
+    if(version <5 && version >0){break;}
 }
             
         while(end) {
