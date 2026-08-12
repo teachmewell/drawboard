@@ -68,8 +68,8 @@ public class Main {
 
         
         if(version ==1){
-           
-a = Predefined.globeTemplate();
+    if(Math.random() > 0.5){a = Predefined.globeTemplate(); } 
+            else{a=Predefined.symbolTemplate();}
 //else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
            
 
