@@ -120,4 +120,15 @@ int[][] res = new int[png.length + bits][png[0].length];
 }
         return res;
     }
+
+public static int[][] deleteLeft(int[][] png, int bits){
+int[][] res = new int[png.length - bits][png[0].length];
+        for (int h=0; h<png[0].length; h++){
+    for(int w=0; w < res.length; w++ ){ 
+        res[w][h] = png[w+bits][h];
+    }
+}
+        return res;
+    }
+    
 }
