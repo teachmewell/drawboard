@@ -28,7 +28,8 @@ System.out.println("for(int y=0; y<a[0].length; y++){");
  for(int y=0; y<a[0].length; y++){
 for(int x=0; x<a.length; x++){
 if(false){}
-else if( x ==28&& y== 3){ a[28][3] =32768;}
+  
+/*else if( x ==28&& y== 3){ a[28][3] =32768;}
 else if( x ==32&& y== 3){ a[32][3] =32768;}
 else if( x ==33&& y== 3){ a[33][3] =32768;}
 else if( x ==34&& y== 3){ a[34][3] =32768;}
@@ -2217,9 +2218,9 @@ else if( x ==29&& y== 54){ a[29][54] =32768;}
 else if( x ==64&& y== 54){ a[64][54] =16776960;}
 else if( x ==65&& y== 54){ a[65][54] =16776960;}
 else if( x ==29&& y== 55){ a[29][55] =32768;}
-else if( x ==30&& y== 55){ a[30][55] =32768;}
+else if( x ==30&& y== 55){ a[30][55] =32768;}*/
 else{a[x][y] = 0xFF0000;}
-}}
+}} 
     return a;
   }
 
