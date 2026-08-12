@@ -14,9 +14,9 @@ int alen = a.length; int tlen = tem.length; int aglen = a[0].length; int tglen =
   int alendif = alen-tlen; // negative if tlen is bigger
   int aglendif = aglen - tglen; // negative if tglen is bigger
 if(alendif > 0){ tem= Img.addRight(tem, alendif); }
-  else{ a = Img.addRight(a, alendif); }
+  else{ a = Img.addRight(a, -alendif); }
 if(aglendif > 0){ tem= Img.addDown(tem, aglendif); }
-  else{ a = Img.addDown(a, aglendif); }
+  else{ a = Img.addDown(a, -aglendif); }
   
 for(int y = 0; y<tem[0].length; y++){
   for(int x = 0; x<tem.length; x++){
