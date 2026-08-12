@@ -20,6 +20,7 @@ public class Main {
             usedQuick = true;
             Img img = new Img(a, m, autofill);
         img.display();
+            return;
         }
   if(args[l].equals( "-o")){
        a = IntoFile.loadImage("drawn.png");
