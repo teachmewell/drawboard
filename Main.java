@@ -25,14 +25,14 @@ public class Main {
         }
         else{
         
-
+int version = 4;
           boolean end = true;
 while(true){
         System.out.println("[0] Do you want a template to start with (enter 0)");
         System.out.println("[1] white png (enter 1)");
         System.out.println("[2] randomly coloured (enter 2)");
         System.out.println("[3] from a file(Do not choose this first time, because it would be 0 bytes big) (enter 3)");
-       int version = System.in.read();
+       version = System.in.read();
         switch(version){
             case '0': version=1; break;
             case '1': version=2; break;
