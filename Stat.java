@@ -17,29 +17,19 @@ for(int x = 0; x< pic.length; x++){
   //______________________________________________________________________________________________________________________________
 
    public static void main(String[] args) throws IOException {
+      
        int[][] a = IntoFile.loadImage("drawn.png");
       System.out.println("Enlarge by how much? (one bit should become how many bits)");
       boolean loo=true;
-      int input = 1;
-    while(loo){
-      System.out.println("Only input numbers 1-9  and a-z (for 10-36)");
-      
-      input = System.in.read();
-      switch(input){
-         case '1': input = input -'0'; loo=false; break; 
-         case '2': input = input -'0'; loo=false; break; 
-         case '3': input = input -'0'; loo=false; break; 
-         case '4': input = input -'0'; loo=false; break; 
-         case '5': input = input -'0'; loo=false; break; 
-         case '6': input = input -'0'; loo=false; break; 
-         case '7': input = input -'0'; loo=false; break; 
-         case '8': input = input -'0'; loo=false; break; 
-         case '9': input = input -'0'; loo=false; break; 
-         default: input = input - 'a' +10;
-            }
-       if(input <= 36 && input>0){ break; }
+      int input = 20;
+  
+      for(int l = 0; l<args.length; l++){
+    if(args[l].equals("-s")){
+       input = Integer.parseInt(args[i+1]);
     }
+      }
     a =  enlarge(a, input);
    IntoFile.saveImage(a);
-   }
+   
+}
 }
