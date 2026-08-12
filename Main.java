@@ -15,7 +15,7 @@ public class Main {
         boolean usedQuick = false;
         
       for(int l = 0; l<args.length; l++){
-        if(args[l]== "-q"){
+        if(args[l].equals( "-q")){
             m = (int) (Math.random() * 0xFFFFFF);
             a = Predefined.neutralGlobe();
             autofill = false;
