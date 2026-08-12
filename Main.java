@@ -7,15 +7,14 @@ import java.awt.image.BufferedImage;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-           
+        
         int[][] a = new int[130][77];
         int m=0;
         boolean autofill = false;
 
         
-        System.out.println("Want to begin with standard settings or configure your own? write 1 for standard. Everything else will be interpreted as configure.");
-        int standard = System.in.read();
-        if(standard == '1'){
+      
+        if(args[1]== 'q'){
             m = (int) (Math.random() * 0xFFFFFF);
             a = Predefined.neutralGlobe();
             autofill = false;
