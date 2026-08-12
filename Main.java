@@ -43,8 +43,8 @@ while(true){
 }
             
         while(end) {
-            System.out.println("\n\nHello, here you can draw numbers. ");
-            System.out.println("choose color, enter their RGB number:");
+            System.out.println("\n\nHello, here you can draw. ");
+            System.out.println("choose color, enter their character:");
             System.out.println("r= red. o= orange. y= yellow. l= lightgreen.");
             System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
             System.out.println("b= blue. v=violet. m=magenta. d=rose. w=white. n=black.");
