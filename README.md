@@ -34,6 +34,8 @@ git clone https://github.com/teachmewell/drawboard.git
 
 follow the instructions on the terminal. After editing, the file will be named "drawn.png". You can only color with one colour at a time. 
 
+if you want to read the manual, type in "cat man.txt" into your console. 
+
 .
 
 .
