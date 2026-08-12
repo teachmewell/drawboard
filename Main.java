@@ -16,7 +16,7 @@ public class Main {
         
         System.out.println("Want to begin with standard settings or configure your own? write 1 for standard. Everything else will be interpreted as configure.");
         int standard = System.in.read();
-        if(standard == 1){
+        if(standard == '1'){
             m = (int) (Math.random() * 0xFFFFFF);
             a = Predefined.globeTemplate();
             autofill = false;
@@ -25,7 +25,7 @@ public class Main {
         }
         else{
         
-int version = 4;
+int version = 0;
           boolean end = true;
 while(true){
         System.out.println("[0] Do you want a template to start with (enter 0)");
@@ -39,6 +39,7 @@ while(true){
             case '2': version=3; break;
             case '3': version = 4; break;
         }
+    if(version != 0){break;}
 }
             
         while(end) {
