@@ -19,9 +19,8 @@ for(int x = 0; x< pic.length; x++){
    public static void main(String[] args) throws IOException {
       
        int[][] a = IntoFile.loadImage("drawn.png");
-      System.out.println("Enlarge by how much? (one bit should become how many bits)");
       boolean loo=true;
-      int input = 20;
+      int input = 3;
   
       for(int l = 0; l<args.length; l++){
     if(args[l].equals("-s")){
