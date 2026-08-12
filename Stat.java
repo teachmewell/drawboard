@@ -22,7 +22,7 @@ for(int x = 0; x< pic.length; x++){
       boolean loo=true;
       int input = 1;
     while(loo){
-      System.out.println("Only input numbers 1-9 . ");
+      System.out.println("Only input numbers 1-9  and a-z (for 10-36)");
       
       input = System.in.read();
       switch(input){
@@ -35,7 +35,9 @@ for(int x = 0; x< pic.length; x++){
          case '7': input = input -'0'; loo=false; break; 
          case '8': input = input -'0'; loo=false; break; 
          case '9': input = input -'0'; loo=false; break; 
+         default: input = input - 'a' +10;
             }
+       if(input <= 36 && input>0){ break; }
     }
       enlarge(a, input);
    IntoFile.saveImage(a);
