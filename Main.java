@@ -76,23 +76,28 @@ public class Main {
 
         
         if(version ==1){
-    if(Math.random() > 0.5){a = Predefined.globeTemplate(); } 
-            else{a=Predefined.symbolTemplate();}
+   /* if(Math.random() > 0.5){a = Predefined.globeTemplate(); } 
+            else{a=Predefined.symbolTemplate();} m*/
 //else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
            
-
+        while(true){
+            System.out.println("press 1 for map, press 2 for symbol");
+        int af = System.in.read();
+        if(af == '1'){a = Predefined.globeTemplate();break; }
+if(af=='0'){a=Predefined.symbolTemplate(); break;}
+    }
 
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
         } 
 
         boolean autofill = false;
-        boolean entered=true;
-        while(entered){
+       
+        while(true){
             System.out.println("Do you want autofill? Enter 1 for yes. Enter 0 for no.");
             System.out.println("Keep in mind: Autofill is very slow. ");
         int af = System.in.read();
-        if(af == '1'){autofill=true;entered = false;}
-if(af=='0'){autofill =false; entered=false;}
+        if(af == '1'){autofill=true;break;}
+if(af=='0'){autofill =false; break;}
     }
         
         Img img = new Img(a, m, autofill);
