@@ -43,7 +43,7 @@ public class Img extends JPanel {
                       int x = (int) (e.getX() /scale);
                 int y = (int) (e.getY()/ scale);
                // System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
-                setPixel(x,y,color, img[x][y]);
+                autofill(x,y,color, img[x][y]);
             }
             
             }
