@@ -47,4 +47,15 @@ public class IntoFile {
             return null;
         }
     }
+
+
+    public static void printout(int[][] todo){
+for (int b = 0; a<todo[0].length; a++){
+    for (int a = 0; b<todo.length; b++){
+        System.out.print(todo[a][b]);
+    }
+}
+        
+    }
+    
 }
