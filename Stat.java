@@ -20,7 +20,7 @@ for(int x = 0; x< pic.length; x++){
       
        int[][] a = IntoFile.loadImage("drawn.png");
       boolean loo=true;
-      int input = 10;
+      int input = 60;
   
       for(int l = 0; l<args.length; l++){
     if(args[l].equals("-s")){
