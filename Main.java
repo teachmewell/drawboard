@@ -49,7 +49,7 @@ public class Main {
                 case 'w': m=0xFFFFFF; end=false; break;
                 case 'p': m=0xFC0FC0; end=false; break;
                 case 'f': m=0x556B2F; end=false; break; 
-                case 't': m=0x321414; end=false; break; 
+                case 't': m=0x895129; end=false; break; 
                         
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
             }
