@@ -29,7 +29,7 @@ public class Img extends JPanel {
                 int y = (int) (e.getY()/ scale);
                 for(int u = 0; u<brushsize>>1; u++){
                     for(int w = 0; w < brushsize>>1; w++){
-                setPixel(x+w,y+u,color);
+                setPixel(x+w,y+u,color, shouldScale);
                 }
                 }
             }}); // END OF MOUSEMOTIONLISTENER
@@ -44,14 +44,14 @@ public class Img extends JPanel {
                 //System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
                   for(int u = 0; u<brushsize>>1; u++){
                     for(int w = 0; w < brushsize>>1; w++){
-                setPixel(x+w,y+u,color);
+                setPixel(x+w,y+u,color, shouldScale);
                 }
                 }
             }else{
                       int x = (int) (e.getX() /scale);
                 int y = (int) (e.getY()/ scale);
                // System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
-                autofill(x,y,color, img[x][y]);
+                autofill(x,y,color, img[x][y], shouldScale);
             }
             
             }
@@ -241,14 +241,14 @@ int[][] res = new int[png.length][png[0].length - bits];
     }
       //___________________________________________________________________________________________________________________________________
 
-public void autofill(int x, int y, int color, int myColor){
+public void autofill(int x, int y, int color, int myColor, boolean shouldScale){
 if(pic[x][y]!=myColor){return;}
     if(pic[x][y]==color){return;}
     else{
-        this.setPixel(x,y,color);
-if(x< pic.length-1){ autofill(x+1,y,color,myColor);}
- if(x>0){ autofill(x-1,y,color, myColor);}
- if(y< pic[0].length-1) {autofill(x,y+1,color,myColor);}
- if(y>0){ autofill(x,y-1,color,myColor);}}
+        this.setPixel(x,y,color, shouldScale);
+if(x< pic.length-1){ autofill(x+1,y,color,myColor, shouldScale);}
+ if(x>0){ autofill(x-1,y,color, myColor, shouldScale);}
+ if(y< pic[0].length-1) {autofill(x,y+1,color,myColor, shouldScale);}
+ if(y>0){ autofill(x,y-1,color,myColor, shouldScale);}}
     }
 }
