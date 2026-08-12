@@ -27,7 +27,7 @@ public class Main {
             System.out.println("r= red. o= orange. y= yellow. l= lightgreen.");
             System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
             System.out.println("b= blue. v=violet. m=magenta. d=rose. w=white. n=black.");
-            System.out.println("p= pink. v=olive. b=brown. ");
+            System.out.println("p= pink. c=olive. w=brown. ");
             m = System.in.read();
             switch(m){
                 case 'r': m=0xFF0000; end=false; break;
@@ -45,8 +45,8 @@ public class Main {
                 case 'n': m=0x000000; end=false; break;
                 case 'w': m=0xFFFFFF; end=false; break;
                 case 'p': m=0xFC0FC0; end=false; break;
-                case 'v': m=0x556B2F; end=false; break; 
-                case 'b': m=0xB94E48; end=false; break; 
+                case 'c': m=0x556B2F; end=false; break; 
+                case 'w': m=0xB94E48; end=false; break; 
                         
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
             }
