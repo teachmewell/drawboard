@@ -123,7 +123,7 @@ public class Img extends JPanel {
         pic[x][y] = color;
         image.setRGB(x,y,color);
 
-        label.setIcon(new ImageIcon(scaleImage(image, scale)));
+     label.setIcon(new ImageIcon(scaleImage(image, scale)));
       //  IntoFile.saveImage(this.pic);
     }
 //_________________________________________________________________________________________________________________________________________
