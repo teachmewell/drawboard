@@ -10,14 +10,14 @@ public class Main {
         int[][] a = new int[130][77];
         int m=0;
 
-        System.out.println("Do you want a template to start with, a completely white paper, randomly coloured, or from a file(Do not choose this first time, because it would be 0 bytes big)? Enter 1,2,3,4. (default is template) ");
+        System.out.println("Do you want a template to start with, a completely white paper, randomly coloured, or from a file(Do not choose this first time, because it would be 0 bytes big)? Enter 1,2,3,4. (default is old one) ");
         int version = System.in.read();
         switch(version){
             case '1': version=1; break;
             case '2': version=2; break;
             case '3': version=3; break;
             case '4': version = 4; break;
-            default: version = 2;
+            default: version = 4;
         }
 
         while(end) {
