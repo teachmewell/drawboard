@@ -12,20 +12,24 @@ public class Main {
         int m= (int) (Math.random() * 0xFFFFFF); //color
         boolean autofill = false;
         int brushsize = 10;
-
+boolean shouldScale = true;
         boolean usedQuick = false;
         
       for(int l = 0; l<args.length; l++){
         if(args[l].equals( "-q")){
             a = Predefined.neutralGlobe();
             usedQuick = true;
-            Img img = new Img(a, m, autofill, brushsize);
+            Img img = new Img(a, m, autofill, brushsize, shouldScale);
         img.display();
             return;
         }
   if(args[l].equals( "-o")){
        a = IntoFile.loadImage("drawn.png");
             usedQuick = true;
+        }
+           if(args[l].equals( "-s")){
+     shouldScale=false;
+               usedQuick = true;
         }
  if(args[l].equals( "-a")){
             usedQuick = true;
@@ -168,7 +172,7 @@ if(af=='0'){autofill =false; break;}
     }
           
       }
-        Img img = new Img(a, m, autofill, brushsize);
+        Img img = new Img(a, m, autofill, brushsize, shouldScale);
 
         img.display();
       
