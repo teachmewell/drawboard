@@ -19,7 +19,7 @@ public class Main {
             m = (int) (Math.random() * 0xFFFFFF);
             a = Predefined.neutralGlobe();
             autofill = false;
-            usedQuuick = true;
+            usedQuick = true;
             Img img = new Img(a, m, autofill);
         img.display();
         }
