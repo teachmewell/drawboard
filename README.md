@@ -47,3 +47,9 @@ If you want to save it, you must rename it or move it into another folder.
 You can draw on your own pgns by dragging them into the folder and renaming them to drawn.png However, you may barely see differences of bit-size of big images.
 
 You can also have custom sizes by changing them inside Main.java (see the array 'a')
+
+.
+
+.
+
+Use the command "java Stat" to enlarge your picture. java Stat will make every bit n times as big. 
