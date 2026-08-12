@@ -43,7 +43,7 @@ while(true){
 }
             
         while(end) {
-            System.out.println("Hello, here you can draw numbers. ");
+            System.out.println("\n\nHello, here you can draw numbers. ");
             System.out.println("choose color, enter their RGB number:");
             System.out.println("r= red. o= orange. y= yellow. l= lightgreen.");
             System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
@@ -70,7 +70,7 @@ while(true){
                 case 't': m=0x895129; end=false; break; 
                 case 'q': m= (int) (Math.random()*0xFFFFFF); end=false; break; 
                         
-                default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS \n ");
+                default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS ");
             }
         }
 
@@ -100,7 +100,7 @@ while(true){
 //else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
            
         while(true){
-            System.out.println("press 1 for map, press 2 for symbol");
+            System.out.println("\n\npress 1 for map, press 2 for symbol\n");
         int af = System.in.read();
         if(af == '1'){a = Predefined.globeTemplate();break; }
 if(af=='0'){a=Predefined.symbolTemplate(); break;}
@@ -110,7 +110,7 @@ if(af=='0'){a=Predefined.symbolTemplate(); break;}
         } 
        
         while(true){
-            System.out.println("Do you want autofill? Enter 1 for yes. Enter 0 for no.");
+            System.out.println("\n\nDo you want autofill? Enter 1 for yes. Enter 0 for no.");
             System.out.println("Keep in mind: Autofill is very slow. ");
         int af = System.in.read();
         if(af == '1'){autofill=true;break;}
