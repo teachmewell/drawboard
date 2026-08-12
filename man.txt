@@ -48,9 +48,13 @@ java Main -q
 
 java Main -o -c FF00F0 -a
 
+java Main -o
+
 java Transcribe 
 
-java Transcribt -c FFFFFF
+java Transcribe -c FFFFFF
+
+java Transcribe -c FFFFFF -v
 
 java Stat 
 
