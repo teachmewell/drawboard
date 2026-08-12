@@ -24,7 +24,7 @@ git clone https://github.com/teachmewell/drawboard.git
 
  cd drawboard/
  
- javac Main.java IntoFile.java Img.java Predefined.java 
+ javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java
  
  java Main
  
