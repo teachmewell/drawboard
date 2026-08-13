@@ -20,7 +20,7 @@ To run it:
 
 *cd drawboard/*
  
-*javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java*
+*javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java*
  
 *java Main*
  
