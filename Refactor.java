@@ -45,3 +45,4 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
 
     IntoFile.saveImage(a);
 }
+}
