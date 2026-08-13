@@ -62,12 +62,14 @@ while(true){
         System.out.println("[2] white png (enter 2)");
         System.out.println("[3] randomly coloured (enter 3)");
         System.out.println("[4] from a file(Do not choose this first time, because it would be 0 bytes big) (enter 4)");
+        System.out.println("[5] use your template.png");
        version = System.in.read();
         switch(version){
             case '1': version=1; break;
             case '2': version=2; break;
             case '3': version=3; break;
             case '4': version = 4; break;
+            case '5': version = 0; a = IntoFile.loadImage("template.png"); break;
         }
     if(version <5 && version >0){break;}
 } 
