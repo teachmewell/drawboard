@@ -32,19 +32,35 @@ System.out.println("Sizes of drawn.png : x = "+ a.length + " , y = "+ a[0].lengt
              try{  int[][] b = IntoFile.loadImage("template.png");
                  System.out.println("Sizes of template.png : x = "+ b.length + " , y = "+ b[0].length);}
              catch ( Exception e ) { return; } 
-
-return;
-             
+return;         
     }
       }
+      
     a =  enlarge(a, input);
    IntoFile.saveImage(a);
-   
 }
  //______________________________________________________________________________________________________________________________
-/* public static void main(String[] args) {
-     int[][] a = IntoFile.loadImage("drawn.png");
-    Predefined.printDiffWhite(a);
+/* public static void main(String[] args) {    // If you use this main: flags -f num .t num  With from color to color change. 
+     int[][] pic = IntoFile.loadImage("drawn.png");
+int from = 0;
+int to = 0;
+
+ for(int l = 0; l<args.length; l++){
+  if(args[l].equals("-f")){
+       from = Integer.parseInt(args[l+1]);
+       l++;
+    }
+    if(args[l].equals("-t")){
+       to = Integer.parseInt(args[l+1]);
+       l++;
+    }
+ }
+for( int y = 0; y < pic[0].length ; y++){
+for(int x = 0; x< pic.length; x++){
+if( pic[x][y] == from){ pic[x][y] = to; }
+}
+}
+    IntoFile.saveImage(pic);
  }*/
 
    
