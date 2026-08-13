@@ -1,7 +1,7 @@
 public class Func{
 
 public static void main(String[] args){
- int[][] a = new int[200][200];
+ int[][] a = new int[2000][2000];
 
   int lenX = a.length; 
   int lenY = a[0].length;
