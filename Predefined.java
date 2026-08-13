@@ -1,5 +1,11 @@
 public class Predefined{
 
+public static void main(String[] args){
+   int[][] a = IntoFile.loadImage("template.png");
+printDiffWhite(a);
+
+}
+  
   public static void printText (int[][] png){ // Need to put into loop first. Makes text for an array named a[x][y]. 
      for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
