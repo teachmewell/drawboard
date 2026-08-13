@@ -29,6 +29,9 @@ for(int x = 0; x< pic.length; x++){
     }
           if(args[l].equals("-i")){
 System.out.println("Sizes of drawn.png : x = "+ a.length + " , y = "+ a[0].length);
+             try{  int[][] b = IntoFile.loadImage("template.png"); }
+             catch ( Exception e ) { return; } 
+System.out.println("Sizes of template.png : x = "+ b.length + " , y = "+ b[0].length);
 return;
              
     }
