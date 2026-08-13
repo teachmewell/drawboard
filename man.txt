@@ -10,13 +10,14 @@ then, to run normal editor:
 java Main
 
 _____________________________________________________________________________________________________________________
-. runnables:  Main, Stat, Transcribe, Refactor, Func
+. runnables:  Main, Stat, Transcribe, Refactor, Func, Predefined
 
 Main  =  main Program. Allows you to edit on a picture, which will be saved into the file named "drawn.png"
 Stat  =  Program which will increase the size of each bit inside "drawn.png" by some value 
 Transcribe =  Program which prints the red bits inside "template.png"  onto  "drawn.png"
 Refactor = Can increase/decrease png size using the flags (see below)
 Func = calculates a function (currently Mandelbrot) and saves it into "func.png"
+Predefined = needs to be overridden. It currently printsDiffWhite( "template.png" );
 
 (to run each, do 
 java <name>
