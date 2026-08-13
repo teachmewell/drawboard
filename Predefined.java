@@ -11,7 +11,7 @@ public static void hideTemplate(){  //can be main
 int[][] n = new int[a.length][a[0].length];
   for (int h=0; h<a[0].length; h++){
     for(int w=0; w < a.length; w++ ){
- if(a[w][h] == 0xFF0000){n[w][h]= 0xFF0000;} else{  w[w][h]=0xFF0001;   /*int g= (int)(Math.random()*0xFFFFFF); if(g!=0xFF0000){n[w][h]= g;}*/ }
+ if(a[w][h] == 0xFF0000){n[w][h]= 0xFF0000;} else{  n[w][h]=0xFF0001;   /*int g= (int)(Math.random()*0xFFFFFF); if(g!=0xFF0000){n[w][h]= g;}*/ }
    }
 }
 IntoFile.saveImage( n,  "template.png" );
