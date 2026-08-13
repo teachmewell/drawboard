@@ -21,6 +21,7 @@ Func       = calculates a function (currently Mandelbrot) and saves it into "fun
 Predefined = needs to be overridden. It currently hides all red bits inside "template.png" ; should never be used unless checked first
 ChangeColor -f <number> -t <number> = change all color bits that are -f to have color -t inside "drawn.png"
 IntoBlackWhite = turns your image into PURE black and white based on brightness
+CombineTwoPics = takes in drawn.png and template.png and saves the result into drawn.png
 
 (to run each, do 
 java <name>
