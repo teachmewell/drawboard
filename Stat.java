@@ -75,6 +75,23 @@ if( pic[x][y] == from){ pic[x][y] = to; }
     IntoFile.saveImage(pic);
  }*/
 
+   public static int[][] intoBlackWhite(int[][] a){
+      for (int y = 0; y < a[0].length; y++) {
+    for (int x = 0; x < a.length; x++) {
+
+        int r = (a[x][y] >> 16) & 0xFF;
+        int g = (a[x][y] >> 8) & 0xFF;
+        int b = a[x][y] & 0xFF;
+
+        int brightness = (r + g + b) / 3;
+
+        if (brightness >= 128)
+            a[x][y] = 0xFFFFFF;  // white
+        else
+            a[x][y] = 0x000000;  // black
+    }
+}
+   }
    
    
 }
