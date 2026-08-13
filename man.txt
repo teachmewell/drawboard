@@ -17,7 +17,7 @@ Stat  =  Program which will increase the size of each bit inside "drawn.png" by 
 Transcribe =  Program which prints the red bits inside "template.png"  onto  "drawn.png"
 Refactor = Can increase/decrease png size using the flags (see below)
 Func = calculates a function (currently Mandelbrot) and saves it into "func.png"
-Predefined = needs to be overridden. It currently printsDiffWhite( "template.png" );
+Predefined = needs to be overridden. It currently hides all red bits inside "template.png" ; should never be used unless checked first
 
 (to run each, do 
 java <name>
