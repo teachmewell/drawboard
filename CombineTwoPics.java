@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.lang.Math;
 
-public class combineTwoPics{
+public class CombineTwoPics{
 
     public static void main(String[] args) throws IOException {
 boolean leftright = true; 
