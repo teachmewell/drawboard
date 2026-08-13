@@ -37,7 +37,7 @@ Main default before using any flags: new file, random color, no autofill, brush 
 
 
 Stat -s <number>    // will increase size of each bit in the picture by <number> times 
-Stat -i             //  Display size of array that makes up drawn.png . Will end the program immediately.
+Stat -i             //  Display size of array that makes up drawn.png and template.png. Will end the program immediately.
 Stat default: 5
 
 Transcribe -c <HEXnumber> // number should be the rgb number in Hexadecimal form of the color. It will map all bits inside "template.png" onto "drawn.png"
