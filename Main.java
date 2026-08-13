@@ -149,19 +149,19 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
         brushsize = 0;
         while(brushsize==0){
             
-            System.out.println("\n\nWhat Brushsize do you want? You can only enter one number (from 0-9). The brushsize will be <number>*4+1 . ");
+            System.out.println("\n\nWhat Brushsize do you want? You can only enter one number (from 0-9). The brushsize will be <number>*2+1 . ");
         int af = System.in.read();
             switch(af){
-                case '0': brushsize = (af-'0')*4+1 ;  break;
-                case '1': brushsize = (af-'0')*4+1 ;  break;
-                case '2': brushsize = (af-'0')*4+1 ;  break;
-                case '3': brushsize = (af-'0')*4+1 ;  break;
-                case '4': brushsize = (af-'0')*4+1 ;  break;
-                case '5': brushsize = (af-'0')*4+1 ;  break;
-                case '6': brushsize = (af-'0')*4+1 ;  break;
-                case '7': brushsize = (af-'0')*4+1 ;  break;
-                case '8': brushsize = (af-'0')*4+1 ;  break;
-                case '9': brushsize = (af-'0')*4+1 ;  break;
+                case '0': brushsize = (af-'0')*2+1 ;  break;
+                case '1': brushsize = (af-'0')*2+1 ;  break;
+                case '2': brushsize = (af-'0')*2+1 ;  break;
+                case '3': brushsize = (af-'0')*2+1 ;  break;
+                case '4': brushsize = (af-'0')*2+1 ;  break;
+                case '5': brushsize = (af-'0')*2+1 ;  break;
+                case '6': brushsize = (af-'0')*2+1 ;  break;
+                case '7': brushsize = (af-'0')*2+1 ;  break;
+                case '8': brushsize = (af-'0')*2+1 ;  break;
+                case '9': brushsize = (af-'0')*2+1 ;  break;
                 default: System.out.println(" You must enter 0-9. ");
             }
     } }  // end of usedBrushSize
