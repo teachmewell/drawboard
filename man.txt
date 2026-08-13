@@ -4,7 +4,7 @@ ________________________________________________________________________________
 first step: 
 
 to compile (aka update to newest runnable version): 
-javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java
+javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java
 
 to run normal editor: 
 java Main
