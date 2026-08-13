@@ -25,6 +25,7 @@ for(int x = 0; x< pic.length; x++){
       for(int l = 0; l<args.length; l++){
     if(args[l].equals("-s")){
        input = Integer.parseInt(args[l+1]);
+       l++;
     }
           if(args[l].equals("-i")){
 System.out.println("Sizes of drawn.png : x = "+ a.length + " , y = "+ a[0].length);
