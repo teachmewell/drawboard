@@ -30,8 +30,8 @@ while(true){
         if(m == 'l'){left = false; break;}
       }
         
-       if(left){  a = IntoFile.loadImage("drawn.png");  b = IntoFile.loadImage("template.png");}
-        else{  a = IntoFile.loadImage("template.png"); b = IntoFile.loadImage("drawn.png"); }
+       if(left){  a = IntoFile.loadImage("template.png");  b = IntoFile.loadImage("drawn.png");}
+        else{  a = IntoFile.loadImage("drawn.png"); b = IntoFile.loadImage("template.png"); }
       
       c = new int[a.length + b.length][Math.max(a[0].length, b[0].length)];
 
