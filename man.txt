@@ -4,13 +4,13 @@ ________________________________________________________________________________
 first step: 
 
 to compile (aka make it a runnable), enter: 
-javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java Func.java
+javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java Func.java ChangeColor.java
 
 then, to run normal editor: 
 java Main
 
 _____________________________________________________________________________________________________________________
-. runnables:  Main, Stat, Transcribe, Refactor, Func, Predefined
+. runnables:  Main, Stat, Transcribe, Refactor, Func, Predefined, ChangeColor
 
 Main       =  main Program. Allows you to edit on a picture, which will be saved into the file named "drawn.png"
 Stat       =  Program which will increase the size of each bit inside "drawn.png" by some value 
@@ -19,6 +19,7 @@ Transcribe =  Program which prints the bits of one specific colour (see flags, d
 Refactor   = Can increase/decrease png size using the flags (see below)
 Func       = calculates a function (currently Mandelbrot) and saves it into "func.png"
 Predefined = needs to be overridden. It currently hides all red bits inside "template.png" ; should never be used unless checked first
+ChangeColor -f <number> -t <number> = change all color bits that are -f to have color -t inside "drawn.png"
 
 (to run each, do 
 java <name>
@@ -51,6 +52,8 @@ Refactor -u <Decimal number> // negative number deletes from up, positive number
 Refactor -l <Decimal number> // negative number deletes from left, positive number adds to left    . affects "drawn.png"
 Refactor -r <Decimal number> // negative number deletes from right, positive number adds to right  . affects "drawn.png"
 
+ChangeColor -f <HexNumber> -t <HexNumber> // changes colouring of every bit that has -f to the colour specified in -t 
+default is from black to black (0x000000)
 ____________________________________________________________________________________________________________________
 
 examples: 
@@ -80,6 +83,8 @@ java Stat -s 2
 java Refactor -d -20 -u 30 -l -40 -r 50
 
 java Refactor -d 20
+
+java ChangeColor -f 07F0FF -t FF0000
 
 __________________________________________________________________________________________________________________________
 
