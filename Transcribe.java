@@ -20,6 +20,13 @@ if(l+1 >= args.length){System.out.println("You must write a hexadecimal number a
   // Needs a file named template.png  Will copy all red bits into drawn.png as black ones. 
   int[][] a = IntoFile.loadImage("drawn.png");
   int[][] tem = IntoFile.loadImage("template.png");
+
+// enlarge the smaller until fits exactly
+int x = Math.min(tem.length/a.length, tem[0].length / a[0].length);
+   a = Stat.enlarge(a, x)
+
+
+   //make them same size
 int alen = a.length; int tlen = tem.length; int aglen = a[0].length; int tglen = tem[0].length;  
   int alendif = alen-tlen; // negative if tlen is bigger
   int aglendif = aglen - tglen; // negative if tglen is bigger
