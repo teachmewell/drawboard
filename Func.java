@@ -5,10 +5,10 @@ public static void main(String[] args){
 
   int lenX = a.length; 
   int lenY = a[0].length;
-  double step = 4.0 / (double)a.length;
+  double step = 3.0 / (double)a.length;
 for(int y =0; y< a[0].length; y++){
 for (int x = 0; x< a.length; x++){
- a[x][y]= func(-2+ x*step, -2+y*step);
+ a[x][y]= func(-1.5+ x*step, -1.5+y*step);
 }
 }
 
