@@ -34,7 +34,7 @@ Main -s             // whether to scale the image. Scaling image costs time, but
 Main default before using any flags: new file, random color, no autofill, brush size = 10
 
 
-Stat -s <HEXnumber> // will increase size of each bit in the picture by <number> times 
+Stat -s <number>    // will increase size of each bit in the picture by <number> times 
 Stat -i             //  Display size of array that makes up drawn.png . Will end the program immediately.
 Stat default: 5
 
