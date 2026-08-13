@@ -48,7 +48,7 @@ return;
       }
 
       if(input == 0){}
-     else if(input >0){ a =  enlarge(a, input);} else{a = shrink(a,input);} 
+     else if(input >0){ a =  enlarge(a, input);} else{a = shrink(a, -input);} 
    IntoFile.saveImage(a);
 }
  //______________________________________________________________________________________________________________________________
