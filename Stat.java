@@ -13,6 +13,17 @@ for(int x = 0; x< pic.length; x++){
 }
 }
     return res;}
+//______________________________________________________________________________________________________
+   public static int[][] shrink(int[][] pic, int bits){
+    int[][] res = new int[pic.length/bits][pic[0].length/bits];
+
+    for(int y = 0; y < res[0].length; y++){
+    for(int x = 0; x < res.length; x++){
+    res[x][y] = pic[x * bits][y * bits];
+    }
+    }
+    return res;
+}
 
   //______________________________________________________________________________________________________________________________
 
@@ -35,8 +46,9 @@ System.out.println("Sizes of drawn.png : x = "+ a.length + " , y = "+ a[0].lengt
 return;         
     }
       }
-      
-    a =  enlarge(a, input);
+
+      if(input == 0){}
+     else if(input >0){ a =  enlarge(a, input);} else{a = shrink(a,input);} 
    IntoFile.saveImage(a);
 }
  //______________________________________________________________________________________________________________________________
