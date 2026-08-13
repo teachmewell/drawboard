@@ -38,7 +38,7 @@ Main -s             // whether to scale the image. Scaling image costs time, but
 Main default before using any flags: new file, random color, no autofill, brush size = 10
 
 
-Stat -s <number>    // will increase size of each bit in the picture by <number> times 
+Stat -s <number>    // will increase size of each bit in the picture by <number> times . Negative numbers shrink the size.
 Stat -i             //  Display size of array that makes up drawn.png and template.png. Will end the program immediately.
 Stat default: 5
 
@@ -78,7 +78,9 @@ java Stat
 
 java Stat -i
 
-java Stat -s 2
+java Stat -s 4
+
+java Stat -s -4
 
 java Refactor -d -20 -u 30 -l -40 -r 50
 
