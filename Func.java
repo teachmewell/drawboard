@@ -16,13 +16,16 @@ for (int x = 0; x< a.length; x++){
 }
 
 
-  public static int func(double x, double y){
+  public static int func(double cx, double cy){
+double x=0; 
+   double y=0;
+   
     int itermax = 100; //max iterations
     int iter = 0;
 while(x*x+y*y<4 && iter<itermax){
   double oldx = x;
-  x = x*x-y*y+x;
-  y= 2*oldx*y+y;
+  x = x*x-y*y+cx;
+  y= 2*oldx*y+cy;
   iter++;
 }
     if(iter == itermax){
