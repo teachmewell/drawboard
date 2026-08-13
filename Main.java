@@ -13,7 +13,11 @@ public class Main {
         boolean autofill = false;
         int brushsize = 1;
 boolean shouldScale = true;
-        boolean usedQuick = false;
+        boolean usedOld = false;
+        boolean usedAutofill = false;
+        boolean usedColor = false;
+        boolean usedBrushsize = false;
+        boolean usedScale = false;
         
       for(int l = 0; l<args.length; l++){
         if(args[l].equals( "-q")){
@@ -25,14 +29,13 @@ boolean shouldScale = true;
         }
   if(args[l].equals( "-o")){
        a = IntoFile.loadImage("drawn.png");
-            usedQuick = true;
+            usedOld = true;
         }
            if(args[l].equals( "-s")){
      shouldScale=false;
-               usedQuick = true;
         }
  if(args[l].equals( "-a")){
-            usedQuick = true;
+            usedAutofill = true;
      autofill = true;
         }
          if(args[l].equals( "-c")){
@@ -40,21 +43,21 @@ if(l+1 >= args.length){System.out.println("You must write a number after -c. Exa
              if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
              m =Integer.parseInt(args[l+1], 16);
              l++;
-            usedQuick = true;
+            usedColor = true;
         }  
   if(args[l].equals( "-b")){
 if(l+1 >= args.length){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
              if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
               brushsize =Integer.parseInt(args[l+1]);
              l++;
-            usedQuick = true;
+            usedBrushsize = true;
         }  
           
       } // end of flagchecks
-      
-      if(usedQuick == false){
-int version = 0;
+      int version = 0;
           boolean end = true;
+        
+if(!usedOld){
 while(true){
         System.out.println("\n \n what do you want to start with? \n[1] a template (enter 1)");
         System.out.println("[2] white png (enter 2)");
@@ -68,7 +71,7 @@ while(true){
             case '4': version = 4; break;
         }
     if(version <5 && version >0){break;}
-}
+} 
             
         while(end) {
             System.out.println("\n\nHello, here you can draw. ");
@@ -141,9 +144,10 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
             
 
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
-        } 
+        } } // end of <if (usedOld) >
 
-          brushsize = 0;
+      if(!usedBrushSize){
+        brushsize = 0;
         while(brushsize==0){
             
             System.out.println("\n\nWhat Brushsize do you want? You can only enter one number (from 0-9). The brushsize will be <number>*4+1 . ");
@@ -161,17 +165,18 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
                 case '9': brushsize = (af-'0')*4+1 ;  break;
                 default: System.out.println(" You must enter 0-9. ");
             }
-    }
+    } }  // end of usedBrushSize
 
+        if(usedAutofill){
            while(true){
             System.out.println("\n\nDo you want autofill? Enter 1 for yes. Enter 0 for no.");
             System.out.println("Keep in mind: Autofill is very slow. ");
         int af = System.in.read();
         if(af == '1'){autofill=true;break;}
 if(af=='0'){autofill =false; break;}
-    }
+    } } // end of usedAutofill
           
-      }
+      
         Img img = new Img(a, m, autofill, brushsize, shouldScale);
 
         img.display();
