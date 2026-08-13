@@ -8,11 +8,11 @@ int to = 0;
 
  for(int l = 0; l<args.length; l++){
   if(args[l].equals("-f")){
-       from = Integer.parseInt(args[l+1]);
+       from = Integer.parseInt(args[l+1], 16);
        l++;
     }
-    if(args[l].equals("-t")){
-       to = Integer.parseInt(args[l+1]);
+   else if(args[l].equals("-t")){
+       to = Integer.parseInt(args[l+1], 16);
        l++;
     }
  }
