@@ -10,7 +10,7 @@ then, to run normal editor:
 java Main
 
 _____________________________________________________________________________________________________________________
-. runnables:  Main, Stat, Transcribe, Refactor, Func, Predefined, ChangeColor
+. runnables:  Main, Stat, Transcribe, Refactor, Func, Predefined, ChangeColor, IntoBlackWhite
 
 Main       =  main Program. Allows you to edit on a picture, which will be saved into the file named "drawn.png"
 Stat       =  Program which will increase the size of each bit inside "drawn.png" by some value 
@@ -20,6 +20,7 @@ Refactor   = Can increase/decrease png size using the flags (see below)
 Func       = calculates a function (currently Mandelbrot) and saves it into "func.png"
 Predefined = needs to be overridden. It currently hides all red bits inside "template.png" ; should never be used unless checked first
 ChangeColor -f <number> -t <number> = change all color bits that are -f to have color -t inside "drawn.png"
+IntoBlackWhite = turns your image into PURE black and white based on brightness
 
 (to run each, do 
 java <name>
