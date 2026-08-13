@@ -75,7 +75,7 @@ while(true){
             System.out.println("choose color, enter their character:");
             System.out.println("r= red. o= orange. y= yellow. x=dark yellow. l= lightgreen.");
             System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
-            System.out.println("b= blue. v=violet. e=light blue. i=purple. m=magenta. d=rose. w=white. n=black.");
+            System.out.println("b= blue. v=violet. e=light purple. i=purple. m=magenta. d=rose. w=white. n=black.");
             System.out.println("p= pink. f=olive. t=brown. q=random.");
             m = System.in.read();
             switch(m){
