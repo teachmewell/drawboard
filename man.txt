@@ -81,3 +81,4 @@ java Refactor -d 20
 __________________________________________________________________________________________________________________________
 
 saving: your data will be located inside "drawn.png" . Save it by renaming the file. 
+besides "drawn.png" , there is "template.png" . It is only used in Transcribe. 
