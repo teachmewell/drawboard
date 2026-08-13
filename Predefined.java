@@ -1,11 +1,24 @@
 public class Predefined{
 
 public static void main(String[] args){
-   int[][] a = IntoFile.loadImage("template.png");
-printDiffWhite(a);
-
+     int[][] a = IntoFile.loadImage("template.png");
+   printDiffWhite(a);
 }
-  
+   
+   //________________________________________________________________________________________________________________________________________-
+public static void changeTemplate(){  //can be main
+   int[][] a = IntoFile.loadImage("template.png");
+int[][] n = new int[a.length][a[0].length];
+  for (int h=0; h<a[0].length; h++){
+    for(int w=0; w < a.length; w++ ){
+ if(a[w][h] == 0xFF0000){n[w][h]= 0xFF0000;} else{int g= (int)(Math.random()*0xFFFFFF); if(g!=0xFF0000){n[w][h]= g;} }
+   }
+}
+IntoFile.saveImage( n,  "template.png" );
+}
+   
+  //______________________________________________________________________________________________________________________________________
+   
   public static void printText (int[][] png){ // Need to put into loop first. Makes text for an array named a[x][y]. 
      for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
