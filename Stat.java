@@ -26,6 +26,11 @@ for(int x = 0; x< pic.length; x++){
     if(args[l].equals("-s")){
        input = Integer.parseInt(args[l+1]);
     }
+          if(args[l].equals("-i")){
+System.out.println("Sizes of drawn.png : x = "+ a.length + " , y = "+ a[0].length);
+return;
+             
+    }
       }
     a =  enlarge(a, input);
    IntoFile.saveImage(a);
