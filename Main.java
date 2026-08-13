@@ -168,7 +168,7 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
             }
     } }  // end of usedBrushSize
 
-        if(usedAutofill){
+        if(!usedAutofill){
            while(true){
             System.out.println("\n\nDo you want autofill? Enter 1 for yes. Enter 0 for no.");
             System.out.println("Keep in mind: Autofill is very slow. ");
