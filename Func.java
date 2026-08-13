@@ -29,9 +29,9 @@ while(x*x+y*y<4 && iter<itermax){
   iter++;
 }
     if(iter == itermax){
-      return 0x000000;
+      return 0xFF0000;
     }
-    else{return 0xFF0000;}
+    else{return 0x000000;}
     
   }
   
