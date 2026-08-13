@@ -4,18 +4,19 @@ ________________________________________________________________________________
 first step: 
 
 to compile (aka make it a runnable), enter: 
-javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java
+javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java Func.java
 
 then, to run normal editor: 
 java Main
 
 _____________________________________________________________________________________________________________________
-. runnables:  Main, Stat, Transcribe, Refactor
+. runnables:  Main, Stat, Transcribe, Refactor, Func
 
 Main  =  main Program. Allows you to edit on a picture, which will be saved into the file named "drawn.png"
 Stat  =  Program which will increase the size of each bit inside "drawn.png" by some value 
 Transcribe =  Program which prints the red bits inside "template.png"  onto  "drawn.png"
 Refactor = Can increase/decrease png size using the flags (see below)
+Func = calculates a function (currently Mandelbrot) and saves it into "func.png"
 
 (to run each, do 
 java <name>
