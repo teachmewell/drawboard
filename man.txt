@@ -4,13 +4,13 @@ ________________________________________________________________________________
 first step: 
 
 to compile (aka make it a runnable), enter: 
-javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java Func.java ChangeColor.java IntoBlackWhite.java
+javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java Func.java ChangeColor.java IntoBlackWhite.java CombineTwoPics.java
 
 then, to run normal editor: 
 java Main
 
 _____________________________________________________________________________________________________________________
-. runnables:  Main, Stat, Transcribe, Refactor, Func, Predefined, ChangeColor, IntoBlackWhite
+. runnables:  Main, Stat, Transcribe, Refactor, Func, Predefined, ChangeColor, IntoBlackWhite, CombineTwoPics
 
 Main       =  main Program. Allows you to edit on a picture, which will be saved into the file named "drawn.png"
 Stat       =  Program which will increase the size of each bit inside "drawn.png" by some value 
