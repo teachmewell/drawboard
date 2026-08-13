@@ -3,10 +3,10 @@ This is manual.
 ____________________________________________________________________________________________________________________
 first step: 
 
-to compile (aka update to newest runnable version): 
+to compile (aka make it a runnable), enter: 
 javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java
 
-to run normal editor: 
+then, to run normal editor: 
 java Main
 
 _____________________________________________________________________________________________________________________
@@ -28,7 +28,7 @@ Main -q             // -q starts immediately and ignores others : random color, 
 Main -o             // setting this flag will run the old file (drawn.png). Not setting this means the old file gets lost.  
 Main -a             // setting -a will enable autofill
 Main -c <HEXnumber> // setting -c number will set the Color  . . . NUMBER MUST BE IN HEXADECIMAL WITHOUT THE LEADING 0x
-Main -b <HEXnumber> // setting the brushsize.  Brushsize = a square around the point you click. 
+Main -b <number>    // setting the brushsize.  Brushsize = a square around the point you click. 
 Main -s             // whether to scale the image. Scaling image costs time, but if your picture is only a few bit big, it is worth it.
 
 Main default before using any flags: new file, random color, no autofill, brush size = 10
