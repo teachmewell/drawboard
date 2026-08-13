@@ -22,8 +22,14 @@ if(l+1 >= args.length){System.out.println("You must write a hexadecimal number a
   int[][] tem = IntoFile.loadImage("template.png");
 
 // enlarge the smaller until fits exactly
-int enl = Math.min(tem.length/a.length, tem[0].length / a[0].length);
-   a = Stat.enlarge(a, enl);
+if(a.length*a[0].length > tem.length *tem[0].length){   
+int enl = Math.max( Math.min(tem.length/a.length, tem[0].length / a[0].length) , 1);
+  tem = Stat.enlarge(tem, enl);
+}
+   else{
+      int enl = Math.max( Math.min(a.length/tem.length, a[0].length / tem[0].length) , 1);
+  a= Stat.enlarge(a, enl);
+   }
 
 
    //make them same size
