@@ -208,7 +208,7 @@ int[][] res = new int[png.length][png[0].length + bits];
         for (int h = 0; h < bits; h++) {
         for (int w = 0; w < res.length; w++) {
            // res[w][h] = color00;
-            res[w][h] = png[w][bits]
+            res[w][h] = png[w][bits];
         }
     }
         return res;
