@@ -39,6 +39,7 @@ Stat default: 5
 Transcribe -c <number> // number should be the rgb number in Hexadecimal form of the color. It will map all bits inside "template.png" onto "drawn.png"
 Transcribe -v          // if set, the color of each bit affected inside the "drawn.png" will be inversed.
                        // If not set, then will map original color (specified in -c or red)
+Transcribe -i          //  Display size of array that makes up drawn.png . Will end the program immediately.
 Transcribe default: maps the red (FF0000) bits of "template.png" . will be same color on "default.png" as well. 
 ____________________________________________________________________________________________________________________
 
@@ -59,6 +60,8 @@ java Transcribe
 java Transcribe -c FFFFFF
 
 java Transcribe -c FFFFFF -v
+
+java Transcribt -i
 
 java Stat 
 
