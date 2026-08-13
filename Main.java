@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         
         int[][] a = new int[120][59]; //was 130 77 before
-        int m= (int) (Math.random() * 0xFFFFFF); //color
+        int m= (int) (Math.random() * 0xFF00FF); //color
         boolean autofill = false;
         int brushsize = 1;
 boolean shouldScale = true;
@@ -45,7 +45,7 @@ if(l+1 >= args.length){System.out.println("You must write a number after -c. Exa
   if(args[l].equals( "-b")){
 if(l+1 >= args.length){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
              if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
-              brushsize =Integer.parseInt(args[l+1], 16);
+              brushsize =Integer.parseInt(args[l+1]);
              l++;
             usedQuick = true;
         }  
