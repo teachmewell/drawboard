@@ -22,7 +22,6 @@ boolean shouldScale = true;
       for(int l = 0; l<args.length; l++){
         if(args[l].equals( "-q")){
             a = Predefined.neutralGlobe();
-            usedQuick = true;
             Img img = new Img(a, m, autofill, brushsize, shouldScale);
         img.display();
             return;
@@ -146,7 +145,7 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
         } } // end of <if (usedOld) >
 
-      if(!usedBrushSize){
+      if(!usedBrushsize){
         brushsize = 0;
         while(brushsize==0){
             
