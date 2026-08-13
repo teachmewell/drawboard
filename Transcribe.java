@@ -23,7 +23,7 @@ if(l+1 >= args.length){System.out.println("You must write a hexadecimal number a
 
 // enlarge the smaller until fits exactly
 int x = Math.min(tem.length/a.length, tem[0].length / a[0].length);
-   a = Stat.enlarge(a, x)
+   a = Stat.enlarge(a, x);
 
 
    //make them same size
