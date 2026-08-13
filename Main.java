@@ -69,9 +69,9 @@ while(true){
             case '2': version=2; break;
             case '3': version=3; break;
             case '4': version = 4; break;
-            case '5': version = 0; a = IntoFile.loadImage("template.png"); break;
+            case '5': version = 5; a = IntoFile.loadImage("template.png"); break;
         }
-    if(version <5 && version >0){break;}
+    if(version <6 && version >0){break;}
 } 
             
         while(end) {
