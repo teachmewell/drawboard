@@ -74,6 +74,10 @@ java Stat -i
 
 java Stat -s 2
 
-java Refactor -d -20 -u 30 -l 40 -r -50
+java Refactor -d -20 -u 30 -l -40 -r 50
 
 java Refactor -d 20
+
+__________________________________________________________________________________________________________________________
+
+saving: your data will be located inside "drawn.png" . Save it by renaming the file. 
