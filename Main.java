@@ -39,14 +39,14 @@ boolean shouldScale = true;
 if(l+1 >= args.length){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
              if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
              m =Integer.parseInt(args[l+1], 16);
-             l=l++;
+             l++;
             usedQuick = true;
         }  
   if(args[l].equals( "-b")){
 if(l+1 >= args.length){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
              if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
               brushsize =Integer.parseInt(args[l+1], 16);
-             l=l++;
+             l++;
             usedQuick = true;
         }  
           
