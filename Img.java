@@ -156,7 +156,7 @@ int[][] res = new int[png.length - bits][png[0].length];
         return res;
     }//_________________________________________________________________________________________________________________________________________
     public static int[][] addRight(int[][] png, int bits){
-        int color00 = png[png.length][png.length / 2];
+        int color00 = png[png.length-1][png.length / 2];
 int[][] res = new int[png.length + bits][png[0].length];
         for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
@@ -212,7 +212,7 @@ int[][] res = new int[png.length][png[0].length + bits];
     }
      //___________________________________________________________________________________________________________________________________
     public static int[][] addDown(int[][] png, int bits){
-        int color00 = png[png.length/2][png.length];
+        int color00 = png[png.length/2][png.length-1];
 int[][] res = new int[png.length][png[0].length + bits];
         for (int h=0; h<png[0].length; h++){
     for(int w=0; w < png.length; w++ ){ 
