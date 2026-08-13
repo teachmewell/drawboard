@@ -34,12 +34,12 @@ Main default before using any flags: new file, random color, no autofill, brush 
 
 
 Stat -s <number> // will increase size of each bit in the picture by <number> times 
+Stat -i          //  Display size of array that makes up drawn.png . Will end the program immediately.
 Stat default: 5
 
 Transcribe -c <number> // number should be the rgb number in Hexadecimal form of the color. It will map all bits inside "template.png" onto "drawn.png"
 Transcribe -v          // if set, the color of each bit affected inside the "drawn.png" will be inversed.
                        // If not set, then will map original color (specified in -c or red)
-Transcribe -i          //  Display size of array that makes up drawn.png . Will end the program immediately.
 Transcribe default: maps the red (FF0000) bits of "template.png" . will be same color on "default.png" as well. 
 ____________________________________________________________________________________________________________________
 
@@ -61,9 +61,9 @@ java Transcribe -c FFFFFF
 
 java Transcribe -c FFFFFF -v
 
-java Transcribt -i
+java Stat
 
-java Stat 
+java Stat -i
 
 java Stat -s 2
 
