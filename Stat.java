@@ -91,7 +91,7 @@ if( pic[x][y] == from){ pic[x][y] = to; }
             a[x][y] = 0x000000;  // black
     }
 }
-   }
+   return a;}
    
    
 }
