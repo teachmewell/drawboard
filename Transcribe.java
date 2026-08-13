@@ -25,15 +25,10 @@ if(l+1 >= args.length){System.out.println("You must write a hexadecimal number a
 if(a.length< tem.length && a[0].length< tem[0].length){
     int enl = Math.max( Math.min(tem.length/ a.length, tem[0].length/ a[0].length), 1 );
         a = Stat.enlarge(a, enl);
-
 } else if(tem.length< a.length && tem[0].length< a[0].length){
-    // tem is smaller in both dimensions
      int enl = Math.max( Math.min(a.length/ tem.length, a[0].length/ tem[0].length), 1 );
         tem = Stat.enlarge(tem, enl);
     }
-
-}
-
 
    //make them same size
 int alen = a.length; int tlen = tem.length; int aglen = a[0].length; int tglen = tem[0].length;  
