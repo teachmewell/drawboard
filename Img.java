@@ -27,9 +27,10 @@ public class Img extends JPanel {
             public void mouseDragged(MouseEvent e){
                 int x = (int) (e.getX() / scale);
                 int y = (int) (e.getY()/ scale);
-                for(int u = 0; u<brushsize>>1; u++){
-                    for(int w = 0; w < brushsize>>1; w++){
-                setPixel(x+w,y+u,color, shouldScale);
+                int half = brushsize / 2;
+                for(int u = -half; u <= half; u++) {
+                for (int w = -half; w <= half; w++) {
+                   setPixel(x + w, y + u, color, shouldScale);
                 }
                 }
             }}); // END OF MOUSEMOTIONLISTENER
@@ -42,9 +43,10 @@ public class Img extends JPanel {
                 int x = (int) (e.getX() /scale);
                 int y = (int) (e.getY()/ scale);
                 //System.out.println("else if(x=="+x+" && y =="+ y+"){a[x][y]=0xFF0000;}");
-                  for(int u = 0; u<brushsize>>1; u++){
-                    for(int w = 0; w < brushsize>>1; w++){
-                setPixel(x+w,y+u,color, shouldScale);
+                 int half = brushsize / 2;
+                for(int u = -half; u <= half; u++) {
+                for (int w = -half; w <= half; w++) {
+                   setPixel(x + w, y + u, color, shouldScale);
                 }
                 }
             }else{
