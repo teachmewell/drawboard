@@ -131,7 +131,7 @@ public class Img extends JPanel {
       //  IntoFile.saveImage(this.pic);
     }
 //_________________________________________________________________________________________________________________________________________
-    public static int[][] addLeft(int[][] png, int bits){
+    public static int[][] addLeft(int[][] png, int bits , boolean copyColor){
        // int color00 = png[0][ png[0].length / 2];
 int[][] res = new int[png.length + bits][png[0].length];
         for (int h=0; h<png[0].length; h++){
@@ -142,11 +142,11 @@ int[][] res = new int[png.length + bits][png[0].length];
         //sets new bits same as color in [0][0]
 
         // commenting this out would set all new bits as the one they were befor
-    /*    for (int h = 0; h < res[0].length; h++) {
+    if(copyColor){   for (int h = 0; h < res[0].length; h++) {
         for (int w = 0; w < (res.length-png.length); w++) {
           //  res[w][h] = color00;
             res[w][h] = png[0][h];
-        } } */
+        } } }
           return res;
     
     }
@@ -160,7 +160,7 @@ int[][] res = new int[png.length - bits][png[0].length];
 }
         return res;
     }//_________________________________________________________________________________________________________________________________________
-    public static int[][] addRight(int[][] png, int bits){
+    public static int[][] addRight(int[][] png, int bits , boolean copyColor){
      //   int color00 = png[png.length-1][png[0].length / 2];
 int[][] res = new int[png.length + bits][png[0].length];
         for (int h=0; h<png[0].length; h++){
@@ -170,12 +170,12 @@ int[][] res = new int[png.length + bits][png[0].length];
 }
         
           //sets new bits same as color in [0][0]
-      /*  for (int h = 0; h < res[0].length; h++) {
+      if(copyColor){  for (int h = 0; h < res[0].length; h++) {
         for (int w = png.length; w < res.length; w++) {
          //   res[w][h] = color00;
             res[w][h]= png[ png.length - 1][h];
         }
-        }  */
+        }  }
         return res;
     
     }
@@ -200,7 +200,7 @@ int[][] res = new int[png.length][png[0].length - bits];
         return res;
     }
     //___________________________________________________________________________________________________________________________________
-    public static int[][] addUp(int[][] png, int bits){
+    public static int[][] addUp(int[][] png, int bits , boolean copyColor){
        //  int color00 = png[png.length /2][0];
 int[][] res = new int[png.length][png[0].length + bits];
         for (int h=0; h<png[0].length; h++){
@@ -210,16 +210,16 @@ int[][] res = new int[png.length][png[0].length + bits];
 }
     
         //sets new bits same as color in [0][0]
-     /*   for (int h = 0; h < bits; h++) {
+ if(copyColor){      for (int h = 0; h < bits; h++) {
         for (int w = 0; w < res.length; w++) {
            // res[w][h] = color00;
             res[w][h] = png[w][0];
         }
-    } */
+    } }
         return res;
     }
      //___________________________________________________________________________________________________________________________________
-    public static int[][] addDown(int[][] png, int bits){
+    public static int[][] addDown(int[][] png, int bits , boolean copyColor){
     //    int color00 = png[png.length/2][png[0].length-1];
 int[][] res = new int[png.length][png[0].length + bits];
         for (int h=0; h<png[0].length; h++){
@@ -229,12 +229,12 @@ int[][] res = new int[png.length][png[0].length + bits];
 }
 
         //sets new bits same as color in [0][0]
-/*   for (int h = png[0].length; h < res[0].length; h++) {
+if(copyColor){   for (int h = png[0].length; h < res[0].length; h++) {
         for (int w = 0; w < res.length; w++) {
             //res[w][h] = color00;
             res[w][h] = png[w][png[0].length -1];
         }
-    } */
+    } }
         
         return res;
     }
