@@ -140,12 +140,14 @@ int[][] res = new int[png.length + bits][png[0].length];
     }
 }
         //sets new bits same as color in [0][0]
-        for (int h = 0; h < res[0].length; h++) {
+
+        // commenting this out would set all new bits as the one they were befor
+    /*    for (int h = 0; h < res[0].length; h++) {
         for (int w = 0; w < (res.length-png.length); w++) {
           //  res[w][h] = color00;
             res[w][h] = png[0][h];
-        }
-        }    return res;
+        } } */
+          return res;
     
     }
 //_______________________________________________________________________________________________________________________________________________
@@ -168,12 +170,13 @@ int[][] res = new int[png.length + bits][png[0].length];
 }
         
           //sets new bits same as color in [0][0]
-        for (int h = 0; h < res[0].length; h++) {
+      /*  for (int h = 0; h < res[0].length; h++) {
         for (int w = png.length; w < res.length; w++) {
          //   res[w][h] = color00;
             res[w][h]= png[ png.length - 1][h];
         }
-        }    return res;
+        }  */
+        return res;
     
     }
 //_______________________________________________________________________________________________________________________________________________
@@ -207,12 +210,12 @@ int[][] res = new int[png.length][png[0].length + bits];
 }
     
         //sets new bits same as color in [0][0]
-        for (int h = 0; h < bits; h++) {
+     /*   for (int h = 0; h < bits; h++) {
         for (int w = 0; w < res.length; w++) {
            // res[w][h] = color00;
             res[w][h] = png[w][0];
         }
-    }
+    } */
         return res;
     }
      //___________________________________________________________________________________________________________________________________
@@ -226,12 +229,12 @@ int[][] res = new int[png.length][png[0].length + bits];
 }
 
         //sets new bits same as color in [0][0]
-for (int h = png[0].length; h < res[0].length; h++) {
+/*   for (int h = png[0].length; h < res[0].length; h++) {
         for (int w = 0; w < res.length; w++) {
             //res[w][h] = color00;
             res[w][h] = png[w][png[0].length -1];
         }
-    }
+    } */
         
         return res;
     }
