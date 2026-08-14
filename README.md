@@ -1,5 +1,5 @@
 supported operations: 
-1. draw a png (and use template)
+1. draw a png (and use template) (autofill, colouring, load template, brushsize, scaling)
 2. get img sizes (amount of bits)
 3. resize any picture (both zooming out/in and adding/removing bits to right/left/up/down)
 4. Copy all the bits of some color from one picture to another (or make all affected bits change color in the other image)
