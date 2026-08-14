@@ -24,6 +24,7 @@ boolean shouldScale = true;
             a = Predefined.neutralGlobe();
             Img img = new Img(a, m, autofill, brushsize, shouldScale);
         img.display();
+        System.out.println("\n\nProcess of running main ended");
             return;
         }
   if(args[l].equals( "-o")){
