@@ -3,8 +3,9 @@ supported operations:
 2. get img sizes (amount of bits)
 3. resize any picture (both zooming out/in and adding/removing bits to right/left/up/down)
 4. Copy all the bits of some color from one picture to another (or make all affected bits change color in the other image)
-5. add two pictures into a bigger picture
-6. change the colour of all instances of one colour inside the picture into another
+5. turn a colour into solely black and white bits (doable with any two colours & no grey tones)
+6. add two pictures into a bigger picture
+7. change the colour of all instances of one colour inside the picture into another
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 To run it: 
