@@ -58,6 +58,6 @@ If you run again and choose 4 as option, then drawn.png will be automatically op
 
 If no drawn.png present, you get an error. 
 
-1,2,3 reset drawn.png . 
+Options 1,2,3 reset drawn.png . 
 
-If you want to save it, you must rename it or move it into another folder. 
+If you want to save it, you must rename it or move it into another folder, because next time you run the code, drawn.png might get overwritten. 
