@@ -45,7 +45,7 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
 
     IntoFile.saveImage(a);
    
-        System.out.println("\n\n New size of the image in bits: width: " +a.length +" , height: "+a.[0].length );
+        System.out.println("\n\n New size of the image in bits: width: " +a.length +" , height: "+a[0].length );
         System.out.println("Process of refactoring the image located indide drawn.png ended. View the results inside drawn.png \n");
 }
 }
