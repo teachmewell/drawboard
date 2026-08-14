@@ -181,6 +181,7 @@ if(af=='0'){autofill =false; break;}
         Img img = new Img(a, m, autofill, brushsize, shouldScale);
 
         img.display();
-      
+
+        System.out.println("\n\nProcess of running main ended");
     }
 }
