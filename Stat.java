@@ -88,9 +88,9 @@ if( pic[x][y] == from){ pic[x][y] = to; }
         int brightness = (r + g + b) / 3;
 
         if (brightness >= 128)
-            a[x][y] = 0xFFFFFF;  // white
+        {a[x][y] = 0xFFFFFF;}  // white
         else
-            a[x][y] = 0x000000;  // black
+        {a[x][y] = 0x000000;}  // black
     }
 }
    return a;}
