@@ -13,6 +13,21 @@ for(int x = 0; x< pic.length; x++){
 }
 }
     return res;}
+
+   //_____________________________________________________________________________________________________
+
+      public static int[][] enlargeColourSame(int[][] pic, int bits){
+int[][] res = new int[pic.length * bits][pic[0].length * bits];
+         int colour = pic[0][0];
+ for( int y = 0; y < pic[0].length ; y++){
+for(int x = 0; x< pic.length; x++){
+
+  for(int z = 0; z< bits; z++){
+    for (int m = 0; m<bits; m++){res[x * bits +z][y*bits+m] = colour; }
+  }
+}
+}
+    return res;}
 //______________________________________________________________________________________________________
    public static int[][] shrink(int[][] pic, int bits){
     int[][] res = new int[pic.length/bits][pic[0].length/bits];
