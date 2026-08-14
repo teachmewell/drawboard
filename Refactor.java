@@ -25,7 +25,7 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
              l++;
         addDown = true;
    }
-        }
+        
      
       if(args[l].equals( "-u")){
 if(l+1 >= args.length){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -u 15"); break;}
@@ -34,7 +34,7 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
              l++;
          addUp = true;
       }
-        }
+        
      
        if(args[l].equals( "-l")){
 if(l+1 >= args.length){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -l 15"); break;}
@@ -42,7 +42,7 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
              left =Integer.parseInt(args[l+1]);
              l++;
    addLeft = true;
-       }
+       
         }
      
        if(args[l].equals( "-r")){
@@ -50,11 +50,8 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
              if(args[l+1].startsWith("-u") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -r 15"); break;}
              r =Integer.parseInt(args[l+1]);
              l++;
-          addRight = true;
-      }
-        }
-     
-      }
+          addRight = true;}
+   }
 
 if(addRight){
     if(r<0){a=Img.deleteRight(a,-r);} else{a=Img.addRight(a,r, copyColor);
