@@ -183,6 +183,6 @@ if(af=='0'){autofill =false; break;}
 
         img.display();
 
-        System.out.println("\n\nProcess of running main ended");
+        System.out.println("\n\nProcess of running main ended. View the results inside drawn.png \n");
     }
 }
