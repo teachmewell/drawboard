@@ -7,6 +7,4 @@ int[][] a = IntoFile.loadImage("drawn.png");
   
         System.out.println("\n\nProcess of turning image into black-white ended. View the results inside drawn.png");
 }
-
-  
 }
