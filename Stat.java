@@ -50,6 +50,8 @@ return;
       if(input == 0){}
      else if(input >0){ a =  enlarge(a, input);} else{a = shrink(a, -input);} 
    IntoFile.saveImage(a);
+      
+        System.out.println("\n\nProcess of Stat ended. Your image inside drawn.png is now "+ input+" times bigger \n");
 }
  //______________________________________________________________________________________________________________________________
 /* public static void main(String[] args) {    // If you use this main: flags -f num .t num  With from color to color change. 
