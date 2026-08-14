@@ -79,6 +79,8 @@ for (int y = 0; y < b[0].length; y++) {
       
       
         IntoFile.saveImage(c);
+        
+        System.out.println("\n\nProcess of combining the two pictures (located inside drawn.png and template.png) ended. View the results inside drawn.png \n");
     }
   
 }
