@@ -13,7 +13,7 @@ ________________________________________________________________________________
 . runnables:  Main, Stat, Transcribe, Refactor, Func, Predefined, ChangeColor, IntoBlackWhite, CombineTwoPics
 
 Main       =  main Program. Allows you to edit on a picture, which will be saved into the file named "drawn.png"
-Stat       =  Program which will increase the size of each bit inside "drawn.png" by some value 
+Stat       =  displays Program size info. You can set the flas -s <number>, then the program will increase the size of each bit inside "drawn.png" by some value 
 Transcribe =  Program which prints the bits of one specific colour (see flags, default is red) inside "template.png"  onto  "drawn.png" . 
               Automatically scales the smaller image until as big as possible without overflow.
 Refactor   = Can increase/decrease png size using the flags (see below)
@@ -41,8 +41,7 @@ Main default before using any flags: new file, random color, no autofill, brush 
 
 
 Stat -s <number>    // will increase size of each bit in the picture by <number> times . Negative numbers shrink the size.
-Stat -i             //  Display size of array that makes up drawn.png and template.png. Will end the program immediately.
-Stat default: 5
+Stat default: displays array size info 
 
 Transcribe -c <HEXnumber> // number should be the rgb number in Hexadecimal form of the color. It will map all bits inside "template.png" onto "drawn.png"
 Transcribe -v             // if set, the color of each bit affected inside the "drawn.png" will be inversed.
