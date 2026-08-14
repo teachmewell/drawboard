@@ -1,3 +1,12 @@
+supported operations: 
+1. draw a png (and use template)
+2. get img sizes (amount of bits)
+3. resize any picture (both zooming out/in and adding/removing bits to right/left/up/down)
+4. Copy all the bits of some color from one picture to another (or make all affected bits change color in the other image)
+5. add two pictures into a bigger picture
+6. change the colour of all instances of one colour inside the picture into another
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 To run it: 
 
  **FIRST:**  install Java , install git.
