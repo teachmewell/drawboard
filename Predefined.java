@@ -3,6 +3,8 @@ public class Predefined{
 public static void main(String[] args){
      
   hideTemplate();
+     
+        System.out.println("\n\nProcess of hiding the template ended");
 }
    
    //________________________________________________________________________________________________________________________________________-
