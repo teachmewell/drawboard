@@ -51,6 +51,7 @@ else{ if(tem[x][y] == color ){a[x][y] = (~a[x][y]) & 0xFFFFFF;} } //takes the in
 }
 
   IntoFile.saveImage(a);
+        System.out.println("\n\nProcess of copying all bits of colour "+ color +" from template.png into drawn.png ended. View the results inside drawn.png \n");
 }
 
 }
