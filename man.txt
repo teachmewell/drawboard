@@ -89,6 +89,11 @@ java Refactor -d 20
 
 java ChangeColor -f 07F0FF -t FF0000
 
+java IntoBlackWhite
+
+java CombineTwoPics
+
+
 __________________________________________________________________________________________________________________________
 
 saving: your data will be located inside "drawn.png" . Save it by renaming the file. 
