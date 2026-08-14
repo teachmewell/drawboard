@@ -1,4 +1,4 @@
-This is manual. 
+This is manual. If you do not understand what to do, you can scroll down to examples and just copy paste. 
 
 ____________________________________________________________________________________________________________________
 first step: 
