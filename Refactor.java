@@ -4,43 +4,72 @@ public class Refactor{
 
 public static void main(String[] args){
    int[][] a = IntoFile.loadImage("drawn.png");
-  int m=0;
+  int r=0;
+  int left=0;
+  int u=0;
+  int d=0;
+   boolean copyColor= false;
+   boolean addRight=false;
+   boolean addLeft=false;
+   boolean addUp = false;
+   boolean addDown = false;
 
    for(int l = 0; l<args.length; l++){
+ if(args[l].equals( "-c")){
+    copyColor = true;
+ }
      if(args[l].equals( "-d")){
 if(l+1 >= args.length){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -d 15"); break;}
              if(args[l+1].startsWith("-r") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -d 15"); break;}
-             m =Integer.parseInt(args[l+1]);
+             d =Integer.parseInt(args[l+1]);
              l++;
-       if(m<0){a=Img.deleteDown(a,-m);} else{a=Img.addDown(a,m);}
+        addDown = true;
+   }
         }
      
       if(args[l].equals( "-u")){
 if(l+1 >= args.length){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -u 15"); break;}
              if(args[l+1].startsWith("-l") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -u 15"); break;}
-             m =Integer.parseInt(args[l+1]);
+             u =Integer.parseInt(args[l+1]);
              l++;
-       if(m<0){a=Img.deleteUp(a,-m);} else{a=Img.addUp(a,m);}
+         addUp = true;
+      }
         }
      
        if(args[l].equals( "-l")){
 if(l+1 >= args.length){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -l 15"); break;}
              if(args[l+1].startsWith("-d") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -l 15"); break;}
-             m =Integer.parseInt(args[l+1]);
+             left =Integer.parseInt(args[l+1]);
              l++;
-       if(m<0){a=Img.deleteLeft(a,-m);} else{a=Img.addLeft(a,m);}
+   addLeft = true;
+       }
         }
      
        if(args[l].equals( "-r")){
 if(l+1 >= args.length){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -r 15"); break;}
              if(args[l+1].startsWith("-u") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -r 15"); break;}
-             m =Integer.parseInt(args[l+1]);
+             r =Integer.parseInt(args[l+1]);
              l++;
-       if(m<0){a=Img.deleteRight(a,-m);} else{a=Img.addRight(a,m);}
+          addRight = true;
+      }
         }
      
       }
-  
+
+if(addRight){
+    if(r<0){a=Img.deleteRight(a,-r);} else{a=Img.addRight(a,r, copyColor);
+}}
+
+   
+if(addLeft){
+   if(left<0){a=Img.deleteLeft(a,-left);} else{a=Img.addLeft(a,left, copyColor);
+}}
+
+   
+if(addUp){if(u<0){a=Img.deleteUp(a,-u);} else{a=Img.addUp(a,u, copyColor);}}
+
+   
+if(addDown){ if(d<0){a=Img.deleteDown(a,-d);} else{a=Img.addDown(a,d, copyColor);}}
 
 
     IntoFile.saveImage(a);
