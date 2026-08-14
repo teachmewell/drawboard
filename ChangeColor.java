@@ -22,6 +22,8 @@ if( pic[x][y] == from){ pic[x][y] = to; }
 }
 }
     IntoFile.saveImage(pic);
+     
+        System.out.println("\n\nProcess of changing colour from "+ from + " to " + to + " ended. View the results inside drawn.png \n");
  }
   
 
