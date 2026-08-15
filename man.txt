@@ -48,6 +48,7 @@ Transcribe -v             // if set, the color of each bit affected inside the "
                           // If not set, then will map original color (specified in -c or red)
 Transcribe default: maps the red (FF0000) bits of "template.png" . will be same color on "default.png" as well. 
 
+Refactor -b                  // wihtout it, the new picture have the same color as the bits on the outer edge, if you set it, they will just be black. 
 Refactor -d <Decimal number> // negative number deletes from down, positive number adds to down    . affects "drawn.png"
 Refactor -u <Decimal number> // negative number deletes from up, positive number adds to up        . affects "drawn.png"
 Refactor -l <Decimal number> // negative number deletes from left, positive number adds to left    . affects "drawn.png"
