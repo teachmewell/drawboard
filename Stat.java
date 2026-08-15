@@ -31,7 +31,7 @@ public class Stat{
      if(inputX == 0 || inputY == 0){ System.out.println("you cannot map an image onto 0 size."); return;}
      if(inputX >0){ a = mapEnlarge(a, inputX, 1);} else{a = mapShrink(a, -inputX, 1);} 
      if(inputY >0){ a = mapEnlarge(a, 1, inputY);} else{a = mapShrink(a, 1, -inputY);} 
-   IntoFile.saveImage(a);
+   IntoFile.saveImage(a, filename);
          System.out.println("\n\nProcess of Stat ended. Your image inside drawn.png is now, with \n x * "+ inputX+" times bigger and y * "+ inputY+" times bigger \n");
        return;
       }
@@ -45,7 +45,7 @@ public class Stat{
        l++;
     if(input == 0){ System.out.println("you cannot map an image onto 0 size."); return;}
      else if(input >0){ a =  enlarge(a, input);} else{a = shrink(a, -input);} 
-   IntoFile.saveImage(a);
+   IntoFile.saveImage(a, filename);
       
         System.out.println("\n\nProcess of Stat ended. Your image inside drawn.png is now "+ input+" times bigger \n");
        return;
