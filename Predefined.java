@@ -1,8 +1,9 @@
 public class Predefined{
 
 public static void main(String[] args){
-     
-  hideTemplate();
+     int[][] a = IntoFile.loadImage("drawn.png");
+int color = 0x00FFFF;
+     printDiffAny(a, color);
      
         System.out.println("\n\nProcess of hiding the template ended");
 }
