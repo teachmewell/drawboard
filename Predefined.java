@@ -84,7 +84,7 @@ System.out.println("for(int y=0; y<a[0].length; y++){");
   //___________________________________________________________________________________________________________________________________________
   
   public static int[][] globeTemplate(){
-int[][] a = IntoFile.leanImage("template.png");
+int[][] a = IntoFile.loadImage("template.png");
        return a;
 }
 
