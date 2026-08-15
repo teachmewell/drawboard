@@ -89,7 +89,7 @@ for(int x = 0; x< pic.length; x++){
      if(inputX >0){ a = mapEnlarge(a, inputX, 1);} else{a = mapShrink(a, -inputX, 1);} 
      if(inputY >0){ a = mapEnlarge(a, 1, inputY);} else{a = mapShrink(a, 1, -inputY);} 
    IntoFile.saveImage(a);
-         System.out.println("\n\nProcess of Stat ended. Your image inside drawn.png is now, with \n x "+ inputX+" times bigger and y"+ inputY+" times bigger \n");
+         System.out.println("\n\nProcess of Stat ended. Your image inside drawn.png is now, with \n x * "+ inputX+" times bigger and y * "+ inputY+" times bigger \n");
        return;
       }
 
