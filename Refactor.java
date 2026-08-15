@@ -16,7 +16,7 @@ public static void main(String[] args){
 
    for(int l = 0; l<args.length; l++){
  if(args[l].equals( "-b")){
-    copyColor = true;
+    copyColor = false;
  }
      if(args[l].equals( "-d")){
 if(l+1 >= args.length){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -d 15"); break;}
