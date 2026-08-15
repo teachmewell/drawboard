@@ -82,6 +82,6 @@ if(addDown){ if(d<0){a=Img.deleteDown(a,-d);} else{a=Img.addDown(a,d, copyColor)
     IntoFile.saveImage(a, filename);
    
         System.out.println("\n\n New size of the image in bits: width: " +a.length +" , height: "+a[0].length );
-        System.out.println("Process of refactoring the image located indide drawn.png ended. View the results inside drawn.png \n");
+        System.out.println("Process of refactoring the image located indide "+filename+" ended. View the results inside drawn.png \n");
 }
 }
