@@ -4,8 +4,13 @@ public class Transcribe{
 public static void main(String[] args){
    int color = 0xFF0000;
    int inverse= 0;
+   boolean copyColor = true;
 
    for(int l = 0; l<args.length; l++){
+ if(args[l].equals( "-b")){
+    copyColor = false;
+ }
+      
     if(args[l].equals( "-c")){
 if(l+1 >= args.length){System.out.println("You must write a hexadecimal number after -c. Example: \njava Transcribe -c FF00FF"); break;}
              if(args[l+1].startsWith("-") ){System.out.println("You must write a hexadecimal number after -c. Example: \njava Transcribe -c FF00FF"); break;}
