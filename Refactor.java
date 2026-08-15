@@ -3,6 +3,7 @@
 public class Refactor{
 
 public static void main(String[] args){
+    String filename= "drawn.png";
    int[][] a = IntoFile.loadImage("drawn.png");
   int r=0;
   int left=0;
@@ -15,6 +16,15 @@ public static void main(String[] args){
    boolean addDown = false;
 
    for(int l = 0; l<args.length; l++){
+
+       if(args[l].equals("-t")){
+    if(l+1 >= args.length){System.out.println("You mmust specify the filename after -t . Example: java Stat -t template.png"); return;}
+    filename = args[l+1];
+ a = IntoFile.loadImage( filename );
+  
+    l++;
+ }
+      
  if(args[l].equals( "-b")){
     copyColor = false;
  }
