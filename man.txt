@@ -43,8 +43,7 @@ Main default before using any flags: new file, random color, no autofill, brush 
 Stat -q <number>          // will increase size of each bit in the picture by <number> times . Negative numbers shrink the size.
 Stat -w <number> <number> // each bit: first param specifies x increase. second param sspecifies y increase. Negative numbers shrink the size.
 Stat -t <Name of File>    // will do all changes on the file specified in name
-
-Stat default: displays array size info 
+Stat default: displays array size info . Does not resize anything if not specified.
 
 Transcribe -c <HEXnumber> // number should be the rgb number in Hexadecimal form of the color. It will map all bits inside "template.png" onto "drawn.png"
 Transcribe -v             // if set, the color of each bit affected inside the "drawn.png" will be inversed.
