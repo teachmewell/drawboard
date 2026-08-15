@@ -46,6 +46,24 @@ System.out.println("for(int y=0; y<a[0].length; y++){");
     System.out.println("}}"); // for the loop
   }
 
+      //_________________________________________________________________________________________________________________________________________
+
+  public static void printDiffAny (int[][] png, int color){ //Prints a function that makes loop with all differences to red
+    System.out.println("int[][] a = new int["+png.length+"]["+png[0].length+"];");
+System.out.println("for(int y=0; y<a[0].length; y++){");
+    System.out.println("for(int x=0; x<a.length; x++){");
+     System.out.println("if(false){}");
+    
+    for (int h=0; h<png[0].length; h++){
+    for(int w=0; w < png.length; w++ ){ 
+      if(png[w][h] != color){ System.out.println( "else if( x =="+w+ "&& y== "+ h+ "){ a["+w+"]["+h+"] =" + png[w][h] +";}"  );}
+    }
+}
+     System.out.println("else{a[x][y] = "+color+";}");
+    System.out.println("}}"); // for the loop
+  }
+
+     
 //_____________________________________________________________________________________________________________________________________________
 
    public static void printDiffWhite (int[][] png){ //Prints a function that makes loop with all differences to red
