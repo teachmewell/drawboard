@@ -40,7 +40,8 @@ Main -s             // whether to scale the image. Scaling image costs time, but
 Main default before using any flags: new file, random color, no autofill, brush size = 10
 
 
-Stat -s <number>    // will increase size of each bit in the picture by <number> times . Negative numbers shrink the size.
+Stat -o <number>          // will increase size of each bit in the picture by <number> times . Negative numbers shrink the size.
+Stat -o <number> <number> // each bit: first param specifies x increase. second param sspecifies y increase. Negative numbers shrink the size.
 Stat default: displays array size info 
 
 Transcribe -c <HEXnumber> // number should be the rgb number in Hexadecimal form of the color. It will map all bits inside "template.png" onto "drawn.png"
