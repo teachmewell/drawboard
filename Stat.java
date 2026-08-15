@@ -14,7 +14,7 @@ public class Stat{
       for(int l = 0; l<args.length; l++){
 
  if(args[l].equals("-t")){
-    if(l+1 > args.length){System.out.println("You mmust specify the filename after -t . Example: java Stat -t template.png"); return;}
+    if(l+1 >= args.length){System.out.println("You mmust specify the filename after -t . Example: java Stat -t template.png"); return;}
     filename = args[l+1];
  a = IntoFile.loadImage( filename );
   
