@@ -3,7 +3,7 @@ import java.lang.Math;
 public class Transcribe{
 
 
-public static void main(String[] args){ 
+public static void main(String[] args){
    // Needs a file named template.png  Will copy all red bits into drawn.png as black ones. 
   int[][] a = IntoFile.loadImage("drawn.png");
   int[][] tem = IntoFile.loadImage("template.png");
@@ -53,15 +53,13 @@ if(aglendif ==0){}
  else if(aglendif > 0){ tem= Img.addDown(tem, aglendif/2, copyColor); tem=Img.addUp(tem, aglendif-aglendif/2, copyColor);  }
   else{ a = Img.addDown(a, -aglendif/2, copyColor); a=Img.addUp(a, -aglendif-(-aglendif/2), copyColor);}
 }
-   //if not resite the smaller one 
+   
    
    
 for(int y = 0; y< Math.min(a[0].length, tem[0].length); y++){
   for(int x = 0; x< Math.min(a.length, tem.length); x++){
  if( inverse==0){if (tem[x][y]== color) { a[x][y]= color; } }
 else{ if(tem[x][y] == color ){a[x][y] = (~a[x][y]) & 0xFFFFFF;} } //takes the inverse
-
-
   }
 }
 
