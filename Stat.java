@@ -5,7 +5,7 @@ public class Stat{
 
    public static void main(String[] args) throws IOException {
 
-      String filename= "template.png";
+      String filename= "drawn.png";
        int[][] a = IntoFile.loadImage("drawn.png");
       int input = 5;
       int inputX = 5;
