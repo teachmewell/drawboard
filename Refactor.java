@@ -15,7 +15,7 @@ public static void main(String[] args){
    boolean addDown = false;
 
    for(int l = 0; l<args.length; l++){
- if(args[l].equals( "-c")){
+ if(args[l].equals( "-b")){
     copyColor = true;
  }
      if(args[l].equals( "-d")){
