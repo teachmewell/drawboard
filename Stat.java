@@ -53,7 +53,7 @@ public class Stat{
       } //end of flag check loop
 
       System.out.println("Sizes of drawn.png : x = "+ a.length + " , y = "+ a[0].length);
-             try{  int[][] b = IntoFile.loadImage(filename);
+             try{  int[][] b = IntoFile.loadImage("template.png");
                  System.out.println("Sizes of template.png : x = "+ b.length + " , y = "+ b[0].length);}
              catch ( Exception e ) { return; } 
 return;  
