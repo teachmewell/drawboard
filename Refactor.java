@@ -23,7 +23,7 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
              if(args[l+1].startsWith("-r") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -d 15"); break;}
              d =Integer.parseInt(args[l+1]);
              l++;
-        addDown = false;
+        addDown = true;
    }
         
      
@@ -32,7 +32,7 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
              if(args[l+1].startsWith("-l") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -u 15"); break;}
              u =Integer.parseInt(args[l+1]);
              l++;
-         addUp = false;
+         addUp = true;
       }
         
      
@@ -41,7 +41,7 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
              if(args[l+1].startsWith("-d") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -l 15"); break;}
              left =Integer.parseInt(args[l+1]);
              l++;
-   addLeft = false;
+   addLeft = true;
        
         }
      
@@ -50,7 +50,7 @@ if(l+1 >= args.length){System.out.println("You must write the number of bits to 
              if(args[l+1].startsWith("-u") ){System.out.println("You must write the number of bits to be deleted after -d. Example: \njava Refactor -r 15"); break;}
              r =Integer.parseInt(args[l+1]);
              l++;
-          addRight = false;}
+          addRight = true;}
    }
 
 if(addRight){
