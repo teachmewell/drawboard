@@ -101,13 +101,14 @@ while(true){
 //else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
            
         while(true){
-            System.out.println("\n\npress 1 for map, press 2 for symbol, press 3 for template.png \n");
+            System.out.println("\n\npress 1 for map, press 2 for symbol, press 3 for template.png , press 4 for drawn.png \n");
         int af = System.in.read();
         if(af == '1'){a = Predefined.neutralGlobe();break; }   
 if(af=='2'){a=Predefined.symbolTemplate(); break;}
         if(af == '3'){a = Predefined.templateTemplate();break; }   
         }
-            
+               if(af == '4'){a = IntoFile.loadImage("drawn.png"); ;break; }    //drawn.png already specified inside beginning
+        }   
 
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
         } } // end of <if (usedOld) >
