@@ -111,7 +111,7 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
         }   
 
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
-        } } // end of <if (usedOld) >
+        } // end of <if (usedOld) >
 
 if(!usedColor){
 
@@ -149,8 +149,7 @@ if(!usedColor){
                 default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS ");
             }
         }
-    
-}
+} // end of usedColor
 
         
       if(!usedBrushsize){
