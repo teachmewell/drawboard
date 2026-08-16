@@ -74,41 +74,6 @@ while(true){
         }
     if(version <6 && version >0){break;}
 } 
-            
-        while(end) {
-            System.out.println("\n\nHello, here you can draw. ");
-            System.out.println("choose color, enter their character:");
-            System.out.println("r= red. o= orange. y= yellow. x=dark yellow. l= lightgreen.");
-            System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
-            System.out.println("b= blue. v=violet. e=light purple. i=purple. m=magenta. d=rose. w=white. n=black.");
-            System.out.println("p= pink. f=olive. t=brown. q=random.");
-            m = System.in.read();
-            switch(m){
-                case 'r': m=0xFF0000; end=false; break;
-                case 'o': m=0xFF7F00; end=false; break;
-                case 'y': m=0xFFFF00; end=false; break;
-                case 'l': m=0x7FFF00; end=false; break;
-                case 'g': m=0x008000; end=false; break;
-                case 's': m=0x00FFF0; end=false; break;
-                case 'c': m=0x00FFFF; end=false; break;
-                case 'a': m=0x07F0FF; end=false; break;
-                case 'b': m=0x0000FF; end=false; break;
-                case 'x': m=0xFFCC33; end=false; break;
-                case 'v': m=0x7F00FF; end=false; break;
-                case 'e': m=0x9999FF; end=false; break;
-                case 'i': m=0x4B0082; end=false; break;
-                case 'm': m=0xFF00FF; end=false; break;
-                case 'd': m=0xFF007F; end=false; break;
-                case 'n': m=0x000000; end=false; break;
-                case 'w': m=0xFFFFFF; end=false; break;
-                case 'p': m=0xFC0FC0; end=false; break;
-                case 'f': m=0x556B2F; end=false; break; 
-                case 't': m=0x895129; end=false; break; 
-                case 'q': m= (int) (Math.random()*0xFFFFFF); end=false; break; 
-                        
-                default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS ");
-            }
-        }
 
      if(version ==3){
             for(int k = 0; k < a.length; k++){
@@ -147,6 +112,46 @@ if(af=='2'){a=Predefined.symbolTemplate(); break;}
                 //   else{  a[x][y]= (int)(Math.random() * 0xFFFFFF);}
         } } // end of <if (usedOld) >
 
+if(!usedColor){
+
+    while(end) {
+            System.out.println("\n\nHello, here you can draw. ");
+            System.out.println("choose color, enter their character:");
+            System.out.println("r= red. o= orange. y= yellow. x=dark yellow. l= lightgreen.");
+            System.out.println("g= green. s= springgreen. c= cyan. a=azure.");
+            System.out.println("b= blue. v=violet. e=light purple. i=purple. m=magenta. d=rose. w=white. n=black.");
+            System.out.println("p= pink. f=olive. t=brown. q=random.");
+            m = System.in.read();
+            switch(m){
+                case 'r': m=0xFF0000; end=false; break;
+                case 'o': m=0xFF7F00; end=false; break;
+                case 'y': m=0xFFFF00; end=false; break;
+                case 'l': m=0x7FFF00; end=false; break;
+                case 'g': m=0x008000; end=false; break;
+                case 's': m=0x00FFF0; end=false; break;
+                case 'c': m=0x00FFFF; end=false; break;
+                case 'a': m=0x07F0FF; end=false; break;
+                case 'b': m=0x0000FF; end=false; break;
+                case 'x': m=0xFFCC33; end=false; break;
+                case 'v': m=0x7F00FF; end=false; break;
+                case 'e': m=0x9999FF; end=false; break;
+                case 'i': m=0x4B0082; end=false; break;
+                case 'm': m=0xFF00FF; end=false; break;
+                case 'd': m=0xFF007F; end=false; break;
+                case 'n': m=0x000000; end=false; break;
+                case 'w': m=0xFFFFFF; end=false; break;
+                case 'p': m=0xFC0FC0; end=false; break;
+                case 'f': m=0x556B2F; end=false; break; 
+                case 't': m=0x895129; end=false; break; 
+                case 'q': m= (int) (Math.random()*0xFFFFFF); end=false; break; 
+                        
+                default: System.out.println(" \n \n CHOOSE ONE OF THE OPTIONS ");
+            }
+        }
+    
+}
+
+        
       if(!usedBrushsize){
         brushsize = 0;
         while(brushsize==0){
