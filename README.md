@@ -14,9 +14,16 @@ To run it:
  
 (on powershell:
 
-*winget install Microsoft.OpenJDK.21*
+***winget install Microsoft.OpenJDK.21***
 
-*winget install --id Git.Git -e --source winget*
+***winget install --id Git.Git -e --source winget***
+
+)
+(alternatively in a browser: 
+
+java:   ***https://adoptium.net/de/temurin/releases*** (just use version 21, they should all work)
+
+git:    ***https://git-scm.com/install/*** 
 
 )
 
