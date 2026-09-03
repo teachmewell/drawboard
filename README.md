@@ -14,7 +14,7 @@ To run it:
  
 (on powershell:
 
-*winget install Microsoft.OpenJDK.19*
+*winget install Microsoft.OpenJDK.21*
 
 *winget install --id Git.Git -e --source winget*
 
