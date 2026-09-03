@@ -19,12 +19,12 @@ To run it:
 ***winget install --id Git.Git -e --source winget***
 
 )
+
 (alternatively in a browser: 
 
 java:   ***https://adoptium.net/de/temurin/releases*** (just use version 21, they should all work)
 
 git:    ***https://git-scm.com/install/*** 
-
 )
 
 .
