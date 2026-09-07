@@ -111,3 +111,6 @@ the HEX Numbers for the colours are in
 cat colours.txt
 
 ______________________________
+
+again, before doing anything, write : 
+javac Main.java IntoFile.java Img.java Predefined.java Stat.java Transcribe.java Refactor.java Func.java ChangeColor.java IntoBlackWhite.java CombineTwoPics.java
