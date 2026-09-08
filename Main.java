@@ -46,8 +46,8 @@ if(l+1 >= args.length){System.out.println("You must write a number after -c. Exa
             usedColor = true;
         }  
   if(args[l].equals( "-b")){
-if(l+1 >= args.length){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
-             if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -c. Example: \njava Main -c FF00FF"); break;}
+if(l+1 >= args.length){System.out.println("You must write a number after -b. Example: \njava Main -b 3"); break;}
+             if(args[l+1].startsWith("-") ){System.out.println("You must write a number after -b. Example: \njava Main -b 3"); break;}
               brushsize =Integer.parseInt(args[l+1]);
              l++;
             usedBrushsize = true;
